@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*Background Video*/
+#bg {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#bg #bg-video {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
+/*Header styles*/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 8vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  -webkit-filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.7));
+          filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.7));
+}
+
+header .logo img {
+  width: 120px;
+}
+
+/*Main styles*/
+main {
+  height: 77vh;
+}
+
+main .texto-inicio {
+  height: 100%;
+  margin: 0% 6% 0% 6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .texto-inicio h1 {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: 0.5px;
+  line-height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+main .texto-inicio h2 {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 15px;
+}
+
+main .texto-inicio h3 {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: #FFFFFF;
+  margin-top: 15px;
+}
+
+main .texto-inicio h4 {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 20px;
+}
+
+main .texto-inicio .botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 15px;
+}
+
+main .texto-inicio .botones .boton-iniciosesion {
+  text-decoration: none;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  color: #DDFF00;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 1.25px;
+  padding: 10px 24px;
+  border: 1px solid #E6E4EA;
+  border-radius: 100px;
+  -webkit-box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  -webkit-filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.15));
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  margin-bottom: 12px;
+}
+
+main .texto-inicio .botones .boton-iniciosesion:hover {
+  background: rgba(208, 188, 255, 0.08);
+  -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 30px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 30px 0 rgba(0, 0, 0, 0.19);
+}
+
+main .texto-inicio .botones .boton-iniciosesion:active {
+  background: rgba(208, 188, 255, 0.2);
+  border: 1px solid #DDFF00;
+}
+
+main .texto-inicio .botones .boton-registro {
+  text-decoration: none;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 14px;
+  color: #000000;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 1.25px;
+  padding: 10px 24px;
+  background: rgba(221, 255, 0, 0.8);
+  border-radius: 100px;
+  -webkit-box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+  -webkit-filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.15));
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+main .texto-inicio .botones .boton-registro:hover {
+  background: #ddff00;
+  -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 30px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 30px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*Footer styles*/
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 15vh;
+  bottom: 0px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+footer ul li {
+  list-style-type: none;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 9px;
+  color: rgba(221, 255, 0, 0.5);
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #CAC4D0;
+  opacity: 80%;
+}
+
+/*Media Queries*/
+@media (min-aspect-ratio: 16 / 9) {
+  #bg-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16 / 9) {
+  #bg-video {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  /* Header styles */
+  header .logo img {
+    width: 150px;
+  }
+  /*Main styles*/
+  main .texto-inicio h1 {
+    font-size: 65px;
+    line-height: 80px;
+  }
+  main .texto-inicio h3 {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+  }
+  main .texto-inicio h4 {
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 50px;
+  }
+  main .texto-inicio .botones {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 40px;
+  }
+  main .texto-inicio .botones .boton-iniciosesion {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 1.25px;
+    padding: 16px 30px;
+    margin-right: 20px;
+  }
+  main .texto-inicio .botones .boton-registro {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 1.25px;
+    padding: 16px 30px;
+    margin-left: 20px;
+  }
+  footer ul li {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    padding: 12px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* Header styles */
+  header .logo img {
+    width: 160px;
+  }
+  /*Main styles*/
+  main .texto-inicio h1 {
+    font-size: 60px;
+    line-height: 78px;
+    text-align: right;
+    letter-spacing: -0.5px;
+  }
+  main .texto-inicio h2 {
+    font-size: 40px;
+    line-height: 59px;
+    text-align: right;
+  }
+  main .texto-inicio h3 {
+    font-size: 30px;
+    line-height: 41px;
+    text-align: right;
+    letter-spacing: 0.5px;
+  }
+  main .texto-inicio h4 {
+    font-size: 20px;
+    line-height: 29px;
+    text-align: right;
+    letter-spacing: 1px;
+  }
+  main .texto-inicio .botones {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 40px;
+  }
+  main .texto-inicio .botones .boton-iniciosesion {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 10px 24px;
+  }
+  main .texto-inicio .botones .boton-registro {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 10px 24px;
+  }
+  footer {
+    height: 50px;
+  }
+  footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+  }
+  footer ul li {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

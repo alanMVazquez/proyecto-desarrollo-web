@@ -1,0 +1,145 @@
+/*Media Queries*/
+
+@media (min-aspect-ratio: 16/9){
+    #bg-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    #bg-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 700px) {
+
+    /* Header styles */
+    
+    header{
+        .logo img{
+            width: 150px;
+        }
+    }
+
+    /*Main styles*/
+
+    main{
+        .texto-inicio{
+            h1{
+                font-size: 65px;
+                line-height: 80px; 
+                }
+            h3{
+                font-size: 24px;
+                line-height: 24px;
+                letter-spacing: 0.5px; 
+                }
+            h4{
+                font-size: 36px;
+                line-height: 36px; 
+                margin-top: 50px;
+                }
+            .botones{
+                flex-direction: row;
+                margin-top: 40px;
+                .boton-iniciosesion{
+                    font-size: 20px;
+                    line-height: 20px;
+                    letter-spacing: 1.25px;
+                    padding: 16px 30px;
+                    margin-right: 20px;
+                }
+                .boton-registro{
+                    font-size: 20px;
+                    line-height: 20px;
+                    letter-spacing: 1.25px;
+                    padding: 16px 30px;
+                    margin-left: 20px;
+                }
+                }
+        }
+        
+    }
+
+    footer{
+        ul{
+            li{
+                font-size: 18px;
+                letter-spacing: 1.5px;
+                padding: 12px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    /* Header styles */
+    
+    header{
+        .logo img{
+            width: 160px;
+        }
+    }
+
+    /*Main styles*/
+
+    main{
+        .texto-inicio{
+            h1{
+                font-size: 60px;
+                line-height: 78px;
+                text-align: right;
+                letter-spacing: -0.5px;
+            }
+            h2{
+                font-size: 40px;
+                line-height: 59px;
+                text-align: right;
+            }
+            h3{
+                font-size: 30px;
+                line-height: 41px;
+                text-align: right;
+                letter-spacing: 0.5px;
+            }
+            h4{
+                font-size: 20px;
+                line-height: 29px;
+                text-align: right;
+                letter-spacing: 1px;
+            }
+            .botones{
+                flex-direction: row;
+                margin-top: 40px;
+                .boton-iniciosesion{
+                    font-size: 14px;
+                    line-height: 14px;
+                    padding: 10px 24px;
+                }
+                .boton-registro{
+                    font-size: 14px;
+                    line-height: 14px;
+                    padding: 10px 24px;
+                }
+                }
+        }
+        
+    }
+
+    footer{
+        height: 50px;
+        ul{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            li{
+                font-size: 14px;
+                line-height: 14px;
+                padding: 0;
+            }
+        }
+    }
+}
