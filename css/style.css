@@ -80,7 +80,10 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+<<<<<<< HEAD
   gap: 20px;
+=======
+>>>>>>> 19ad6c190ce78b8f007b3f2d135792f53cbd51c3
 }
 
 main .texto-inicio {
@@ -117,12 +120,21 @@ main .texto-inicio h1 {
   color: #FFFFFF;
 }
 
-main .texto-inicio h2 {
+main .texto-inicio .txt-desktop {
+  display: none;
+}
+
+main .texto-inicio .txt-desktop h2 {
   font-family: 'Montserrat Alternates';
   font-style: normal;
   font-weight: 500;
+<<<<<<< HEAD
   font-size: 16px;
   line-height: 16px;
+=======
+  font-size: 30px;
+  line-height: 30px;
+>>>>>>> 19ad6c190ce78b8f007b3f2d135792f53cbd51c3
   letter-spacing: 0.15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -135,11 +147,33 @@ main .texto-inicio h2 {
   margin-top: 14px;
 }
 
-main .texto-inicio h3 {
+main .texto-inicio .txt-desktop h3 {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+<<<<<<< HEAD
+  font-weight: 600;
+  font-size: 20px;
+=======
+  font-weight: 500;
+  font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+  margin-top: 14px;
+}
+
+main .texto-inicio h4 {
   font-family: 'Montserrat Alternates';
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 17px;
+>>>>>>> 19ad6c190ce78b8f007b3f2d135792f53cbd51c3
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -148,7 +182,11 @@ main .texto-inicio h3 {
           align-items: center;
   text-align: center;
   color: #FFFFFF;
+<<<<<<< HEAD
   margin-top: 18px;
+=======
+  margin-top: 8px;
+>>>>>>> 19ad6c190ce78b8f007b3f2d135792f53cbd51c3
 }
 
 main .formulario {
@@ -408,7 +446,11 @@ footer ul li {
   line-height: 12px;
   text-align: center;
   letter-spacing: 1px;
+<<<<<<< HEAD
   padding: 6px;
+=======
+  padding: 5px;
+>>>>>>> 19ad6c190ce78b8f007b3f2d135792f53cbd51c3
   color: rgba(221, 255, 0, 0.5);
 }
 
