@@ -50,10 +50,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-<<<<<<< HEAD
     gap: 20px;
-=======
->>>>>>> 19ad6c190ce78b8f007b3f2d135792f53cbd51c3
     .texto-inicio{
         display: flex;
         flex-direction: column;
@@ -72,7 +69,6 @@ main{
             text-align: center;
             color: $text-color;
         }
-<<<<<<< HEAD
         h2{
             font-family: 'Montserrat Alternates';
             font-style: normal;
@@ -91,53 +87,12 @@ main{
             font-style: normal;
             font-weight: 600;
             font-size: 20px;
-=======
-        .txt-desktop{
-            display: none;
-            h2{
-                font-family: 'Montserrat Alternates';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 30px;
-                line-height: 30px;
-                letter-spacing: 0.15px;
-                display: flex;
-                align-items: center;
-                text-align: center;
-                color: $text-color;
-                margin-top: 14px; 
-            }
-            h3{
-                font-family: 'Montserrat Alternates';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 24px;
-                display: flex;
-                align-items: center;
-                text-align: center;
-                letter-spacing: 0.5px;
-                color: $text-color;
-                margin-top: 14px;  
-            }
-        }
-        h4{
-            font-family: 'Montserrat Alternates';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 17px;
->>>>>>> 19ad6c190ce78b8f007b3f2d135792f53cbd51c3
             display: flex;
             align-items: center;
             text-align: center;
             color: $text-color;
-<<<<<<< HEAD
             margin-top: 18px;   
         }        
-=======
-            margin-top: 8px; 
-        }
-        
->>>>>>> 19ad6c190ce78b8f007b3f2d135792f53cbd51c3
     }
     .formulario{
         display: flex;
@@ -314,11 +269,7 @@ footer{
             line-height: 12px;
             text-align: center;
             letter-spacing: 1px;
-<<<<<<< HEAD
             padding: 6px;
-=======
-            padding: 5px;
->>>>>>> 19ad6c190ce78b8f007b3f2d135792f53cbd51c3
             color: rgba(221, 255, 0, 0.5);
             a{
                 text-decoration: none;
