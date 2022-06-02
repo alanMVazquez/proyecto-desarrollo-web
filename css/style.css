@@ -5,11 +5,35 @@
           box-sizing: border-box;
 }
 
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+html body {
+  height: 100vh;
+}
+
 /*Background Video*/
 #bg {
+  position: relative;
   width: 100%;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(31, 1, 41, 0.5);
+  overflow: hidden;
 }
 
 #bg #bg-video {
@@ -31,11 +55,11 @@ header {
           align-items: center;
   width: 100%;
   height: 8vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-  -webkit-filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.5));
-          filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.5));
+  background-color: rgba(31, 1, 41, 0.5);
+  -webkit-box-shadow: 0px 1px 3px 1px rgba(31, 1, 41, 0.15);
+          box-shadow: 0px 1px 3px 1px rgba(31, 1, 41, 0.15);
+  -webkit-filter: drop-shadow(0px 1px 2px rgba(31, 1, 41, 0.5));
+          filter: drop-shadow(0px 1px 2px rgba(31, 1, 41, 0.5));
 }
 
 header .logo img {
@@ -44,12 +68,21 @@ header .logo img {
 
 /*Main styles*/
 main {
-  height: 77vh;
+  height: 78vh;
+  margin: 0% 6% 0% 6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main .texto-inicio {
-  height: 100%;
-  margin: 0% 6% 0% 6%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,15 +96,16 @@ main .texto-inicio {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 8px;
 }
 
 main .texto-inicio h1 {
   font-family: 'Montserrat Alternates';
   font-style: normal;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 30px;
+  line-height: 36px;
   letter-spacing: 0.5px;
-  line-height: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,12 +116,16 @@ main .texto-inicio h1 {
   color: #FFFFFF;
 }
 
-main .texto-inicio h2 {
+main .texto-inicio .txt-desktop {
+  display: none;
+}
+
+main .texto-inicio .txt-desktop h2 {
   font-family: 'Montserrat Alternates';
   font-style: normal;
   font-weight: 500;
-  font-size: 34px;
-  line-height: 40px;
+  font-size: 30px;
+  line-height: 30px;
   letter-spacing: 0.15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,15 +135,14 @@ main .texto-inicio h2 {
           align-items: center;
   text-align: center;
   color: #FFFFFF;
-  margin-top: 15px;
+  margin-top: 14px;
 }
 
-main .texto-inicio h3 {
+main .texto-inicio .txt-desktop h3 {
   font-family: 'Montserrat Alternates';
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,17 +150,16 @@ main .texto-inicio h3 {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  letter-spacing: 0.25px;
+  letter-spacing: 0.5px;
   color: #FFFFFF;
-  margin-top: 15px;
+  margin-top: 14px;
 }
 
 main .texto-inicio h4 {
   font-family: 'Montserrat Alternates';
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 17px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,10 +168,10 @@ main .texto-inicio h4 {
           align-items: center;
   text-align: center;
   color: #FFFFFF;
-  margin-top: 20px;
+  margin-top: 8px;
 }
 
-main .texto-inicio .botones {
+main .formulario {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,46 +179,187 @@ main .texto-inicio .botones {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-main .texto-inicio .botones .boton-iniciosesion {
-  text-decoration: none;
+main .formulario .tab {
+  margin-top: 12px;
+  overflow: hidden;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(114, 101, 136, 0.2);
+}
+
+main .formulario .tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 100%;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 1.5px;
+  color: #FFFFFF;
+}
+
+main .formulario .tab button:hover {
+  background: rgba(114, 101, 136, 0.4);
+}
+
+main .formulario .tab button.active {
+  background: rgba(114, 101, 136, 0.6);
+  color: #DDFF00;
+  border-bottom: 2px solid #DDFF00;
+}
+
+main .formulario .tabcontent {
+  display: none;
+  background: rgba(114, 101, 136, 0.6);
+  border-top: none;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  -webkit-animation: fadeEffect 1s;
+          animation: fadeEffect 1s;
+  width: 100%;
+}
+
+main .formulario .form-ingresar {
+  padding: 15px;
+}
+
+main .formulario .form-ingresar fieldset {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+main .formulario .form-ingresar fieldset .ingresa-usuario, main .formulario .form-ingresar fieldset .ingresa-email, main .formulario .form-ingresar fieldset .ingresa-password {
+  width: 80%;
+}
+
+main .formulario .form-ingresar fieldset .ingresa-usuario input, main .formulario .form-ingresar fieldset .ingresa-email input, main .formulario .form-ingresar fieldset .ingresa-password input {
+  border: 1px solid #FFFFFF;
+  border-radius: 8px;
+  background: none;
+  height: 36px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 14px;
-  color: #DDFF00;
+  letter-spacing: 1.25px;
+  padding-left: 4%;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+main .formulario .form-ingresar fieldset .ingresa-usuario input::-webkit-input-placeholder, main .formulario .form-ingresar fieldset .ingresa-email input::-webkit-input-placeholder, main .formulario .form-ingresar fieldset .ingresa-password input::-webkit-input-placeholder {
+  color: #FFFFFF;
+  opacity: 60%;
+}
+
+main .formulario .form-ingresar fieldset .ingresa-usuario input:-ms-input-placeholder, main .formulario .form-ingresar fieldset .ingresa-email input:-ms-input-placeholder, main .formulario .form-ingresar fieldset .ingresa-password input:-ms-input-placeholder {
+  color: #FFFFFF;
+  opacity: 60%;
+}
+
+main .formulario .form-ingresar fieldset .ingresa-usuario input::-ms-input-placeholder, main .formulario .form-ingresar fieldset .ingresa-email input::-ms-input-placeholder, main .formulario .form-ingresar fieldset .ingresa-password input::-ms-input-placeholder {
+  color: #FFFFFF;
+  opacity: 60%;
+}
+
+main .formulario .form-ingresar fieldset .ingresa-usuario input::placeholder, main .formulario .form-ingresar fieldset .ingresa-email input::placeholder, main .formulario .form-ingresar fieldset .ingresa-password input::placeholder {
+  color: #FFFFFF;
+  opacity: 60%;
+}
+
+main .formulario .form-ingresar .text-log {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+}
+
+main .formulario .form-ingresar .text-log h3 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  letter-spacing: 1.25px;
-  padding: 10px 24px;
-  border: 1px solid #E6E4EA;
-  border-radius: 100px;
-  -webkit-box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-  -webkit-filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.15));
-          filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.15));
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
-  margin-bottom: 12px;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  margin: 0 3% 0 1%;
 }
 
-main .texto-inicio .botones .boton-iniciosesion:hover {
-  background: rgba(208, 188, 255, 0.08);
-  -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 30px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 30px 0 rgba(0, 0, 0, 0.19);
+main .formulario .form-ingresar .text-log a {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 1px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #E2FA67;
+  margin-left: 6%;
 }
 
-main .texto-inicio .botones .boton-iniciosesion:active {
-  background: rgba(208, 188, 255, 0.2);
-  border: 1px solid #DDFF00;
+main .formulario .form-ingresar .botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
 }
 
-main .texto-inicio .botones .boton-registro {
+main .formulario .form-ingresar .boton-registro {
   text-decoration: none;
   font-family: 'Poppins';
   font-style: normal;
@@ -198,18 +375,22 @@ main .texto-inicio .botones .boton-registro {
   padding: 10px 24px;
   background: rgba(221, 255, 0, 0.8);
   border-radius: 100px;
-  -webkit-box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
-  -webkit-filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.15));
-          filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.15));
+  -webkit-box-shadow: 0px 4px 8px 3px rgba(31, 1, 41, 0.15);
+          box-shadow: 0px 4px 8px 3px rgba(31, 1, 41, 0.15);
+  -webkit-filter: drop-shadow(0px 1px 3px rgba(31, 1, 41, 0.15));
+          filter: drop-shadow(0px 1px 3px rgba(31, 1, 41, 0.15));
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
 }
 
-main .texto-inicio .botones .boton-registro:hover {
+main .formulario .form-ingresar .boton-registro:hover {
   background: #ddff00;
   -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 30px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 30px 0 rgba(0, 0, 0, 0.19);
+}
+
+main .img-ingresar, main .img-ingresar2 {
+  display: none;
 }
 
 /*Footer styles*/
@@ -229,9 +410,13 @@ footer {
           align-items: center;
   position: absolute;
   width: 100%;
-  height: 15vh;
+  height: 14vh;
   bottom: 0px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(31, 1, 41, 0.5);
+}
+
+footer ul .footer-link {
+  display: none;
 }
 
 footer ul li {
@@ -243,14 +428,14 @@ footer ul li {
   line-height: 12px;
   text-align: center;
   letter-spacing: 1px;
-  padding: 9px;
+  padding: 5px;
   color: rgba(221, 255, 0, 0.5);
 }
 
 footer ul li a {
   text-decoration: none;
   color: #CAC4D0;
-  opacity: 80%;
+  opacity: 90%;
 }
 
 /*Media Queries*/
@@ -268,114 +453,148 @@ footer ul li a {
   }
 }
 
-@media screen and (min-width: 700px) {
-  /* Header styles */
-  header .logo img {
-    width: 150px;
-  }
+@media screen and (min-width: 576px) {
   /*Main styles*/
-  main .texto-inicio h1 {
-    font-size: 65px;
-    line-height: 80px;
+  main {
+    height: 80vh;
   }
-  main .texto-inicio h3 {
-    font-size: 24px;
-    line-height: 24px;
-    letter-spacing: 0.5px;
+  main .texto-inicio {
+    margin-top: 12px;
+  }
+  main .texto-inicio h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  main .texto-inicio .txt-desktop {
+    display: block;
+  }
+  main .texto-inicio .txt-desktop h2 {
+    display: none;
+  }
+  main .texto-inicio .txt-desktop h3 {
+    font-size: 28px;
+    margin-top: 8px;
   }
   main .texto-inicio h4 {
-    font-size: 36px;
-    line-height: 36px;
-    margin-top: 50px;
+    font-size: 30px;
+    margin-top: 12px;
   }
-  main .texto-inicio .botones {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-top: 40px;
+  main .formulario .tab {
+    margin-top: 10px;
   }
-  main .texto-inicio .botones .boton-iniciosesion {
-    font-size: 20px;
-    line-height: 20px;
-    letter-spacing: 1.25px;
-    padding: 16px 30px;
-    margin-right: 20px;
-  }
-  main .texto-inicio .botones .boton-registro {
-    font-size: 20px;
-    line-height: 20px;
-    letter-spacing: 1.25px;
-    padding: 16px 30px;
-    margin-left: 20px;
-  }
-  footer ul li {
-    font-size: 18px;
-    letter-spacing: 1.5px;
-    padding: 12px;
+  footer {
+    height: 12vh;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  /* Header styles */
   header .logo img {
     width: 160px;
   }
   /*Main styles*/
+  main {
+    height: 86vh;
+  }
+  main .texto-inicio {
+    margin-top: 0px;
+    gap: 4px;
+  }
   main .texto-inicio h1 {
+    font-weight: 700;
     font-size: 60px;
-    line-height: 78px;
-    text-align: right;
+    line-height: 60px;
     letter-spacing: -0.5px;
   }
-  main .texto-inicio h2 {
-    font-size: 40px;
-    line-height: 59px;
-    text-align: right;
+  main .texto-inicio .txt-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
   }
-  main .texto-inicio h3 {
-    font-size: 30px;
-    line-height: 41px;
-    text-align: right;
-    letter-spacing: 0.5px;
+  main .texto-inicio .txt-desktop h2, main .texto-inicio .txt-desktop h3 {
+    display: block;
+    font-size: 34px;
+    line-height: 34px;
+    margin-top: 10px;
   }
   main .texto-inicio h4 {
-    font-size: 20px;
-    line-height: 29px;
-    text-align: right;
-    letter-spacing: 1px;
-  }
-  main .texto-inicio .botones {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
     margin-top: 40px;
   }
-  main .texto-inicio .botones .boton-iniciosesion {
-    font-size: 14px;
-    line-height: 14px;
-    padding: 10px 24px;
+  main .formulario .tab {
+    margin-top: 20px;
+    width: 70%;
+    height: 50px;
   }
-  main .texto-inicio .botones .boton-registro {
-    font-size: 14px;
-    line-height: 14px;
-    padding: 10px 24px;
+  main .formulario .tab button {
+    width: 70%;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  main .formulario .tabcontent {
+    width: 70%;
+  }
+  main .formulario .form-ingresar fieldset .ingresa-usuario input, main .formulario .form-ingresar fieldset .ingresa-email input, main .formulario .form-ingresar fieldset .ingresa-password input {
+    height: 50px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+  main .formulario .form-ingresar .text-log {
+    margin-top: 20px;
+  }
+  main .formulario .form-ingresar .text-log h3, main .formulario .form-ingresar .text-log a {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  main .formulario .form-ingresar .botones {
+    margin-top: 20px;
+  }
+  main .formulario .form-ingresar .botones .boton-registro {
+    font-size: 18px;
+    line-height: 18px;
+    padding: 12px 40px;
+  }
+  main .img-ingresar {
+    display: block;
+    position: absolute;
+    width: 360px;
+    height: 520px;
+    right: -107px;
+    bottom: 50px;
+  }
+  main .img-ingresar2 {
+    display: block;
+    position: absolute;
+    width: 360px;
+    height: 520px;
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+    left: -107px;
+    bottom: 50px;
   }
   footer {
-    height: 50px;
+    height: 6vh;
   }
   footer ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     width: 100%;
   }
+  footer ul .footer-link {
+    display: block;
+  }
   footer ul li {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 12px;
+    line-height: 12px;
     padding: 0;
   }
 }

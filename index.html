@@ -30,23 +30,97 @@
         <main>
             <div class="texto-inicio">
                 <h1>Series y Peliculas animadas</h1>
-                <h2>Disfrútalas sin límite</h2>
-                <h3>Donde y cuando quieras</h3>
+                <div class="txt-desktop">
+                    <h2>Disfrútalas sin límite,</h2>
+                    <h3>donde y cuando quieras</h3>
+                </div>
                 <h4>¿Quieres ser parte de Magima?</h4>
-                <div class="botones">
-                    <a class="boton-iniciosesion" href="./pages/iniciar-sesion.html">Iniciar Sesión</a>
-                    <a class="boton-registro" href="./pages/registro.html">Registrarme</a>
+            </div>
+
+            <div class="formulario">
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'Iniciar')" id="defaultOpen">Iniciar Sesión</button>
+                    <button class="tablinks" onclick="openCity(event, 'Registro')">Registro</button>
+                </div>
+                <div id="Iniciar" class="tabcontent">
+                    <form class="form-ingresar">
+                        <fieldset>
+                            <div class="ingresa-email">
+                                <input type="email" name="email" placeholder="Email">
+                            </div>
+                            <div class="ingresa-password" >
+                                <input type="password" name="contraseña" placeholder="Contraseña">
+                            </div>
+                        </fieldset>
+                        <div class="text-log"><input type="checkbox" name="recordar">
+                        <h3>Recordarme</h3>
+                        <a href="#">Olvidé mi contraseña</a>
+                        </div>
+                        <div class="botones">
+                            <a class="boton-registro" href="./pages/registro.html">Ingresar</a>
+                        </div>
+                    </form>
+                </div>
+                <div id="Registro" class="tabcontent">
+                    <form class="form-ingresar">
+                        <fieldset>
+                            <div class="ingresa-usuario">
+                                <label for="usuario"></label>
+                                <input type="text" name="usuario" placeholder="Nombre de usuario"></div>
+                            <div class="ingresa-email">
+                                <input type="email" name="email" placeholder="Email">
+                            </div>
+                            <div class="ingresa-password" >
+                                <input type="password" name="contraseña" placeholder="Contraseña">
+                            </div>
+                        </fieldset>
+                        <div class="text-log"><input type="checkbox" name="recordar">
+                        <h3>Acepto los términos y condiciones</h3>
+                        <a href="#">Olvidé mi contraseña</a>
+                        </div>
+                        <div class="botones">
+                            <a class="boton-registro" href="./pages/registro.html">Registrarme</a>
+                        </div>
+                    </form>    
                 </div>
             </div>
+
+            <img src="../img/index/girlpng-iniciarsesion.png" alt="" class="img-ingresar">
+            <img src="../img/index/girlpng-iniciarsesion.png" alt="" class="img-ingresar2">
+
         </main>
         
         <footer>
             <ul>
-                <li><a href="./pages/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
-                <li><a href="./pages/terminosycondiciones.html">Términos y Condiciones</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li class="footer-link"><a href="#">Prensa</a></li>
+                <li><a href="#">Términos y Condiciones</a></li>
+                <li class="footer-link"><a href="#">Privacidad</a></li>
                 <li>Creado por Alan M. Vazquez</li>
             </ul>
         </footer>
+
     </div>
+
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+
 </body>
+
 </html>
