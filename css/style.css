@@ -35,6 +35,9 @@ html body {
   height: 100vh;
   background: rgba(31, 1, 41, 0.5);
   overflow: hidden;
+  /*Header styles*/
+  /*Main styles*/
+  /*Footer styles*/
 }
 
 #bg #bg-video {
@@ -43,8 +46,7 @@ html body {
   z-index: -1;
 }
 
-/*Header styles*/
-header {
+#bg header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,12 +65,11 @@ header {
           filter: drop-shadow(0px 1px 2px rgba(31, 1, 41, 0.5));
 }
 
-header .logo img {
+#bg header .logo img {
   width: 120px;
 }
 
-/*Main styles*/
-main {
+#bg main {
   height: 78vh;
   margin: 0% 6% 0% 6%;
   display: -webkit-box;
@@ -84,7 +85,7 @@ main {
   gap: 20px;
 }
 
-main .texto-inicio {
+#bg main .texto-inicio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,7 +102,7 @@ main .texto-inicio {
   margin-top: 8px;
 }
 
-main .texto-inicio h1 {
+#bg main .texto-inicio h1 {
   font-family: 'Montserrat Alternates';
   font-style: normal;
   font-weight: 600;
@@ -117,7 +118,7 @@ main .texto-inicio h1 {
   color: #FFFFFF;
 }
 
-main .texto-inicio h2 {
+#bg main .texto-inicio h2 {
   font-family: 'Montserrat Alternates';
   font-style: normal;
   font-weight: 500;
@@ -134,7 +135,7 @@ main .texto-inicio h2 {
   margin-top: 14px;
 }
 
-main .texto-inicio h3 {
+#bg main .texto-inicio h3 {
   font-family: 'Montserrat Alternates';
   font-style: normal;
   font-weight: 600;
@@ -150,7 +151,7 @@ main .texto-inicio h3 {
   margin-top: 18px;
 }
 
-main .formulario {
+#bg main .formulario {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,7 +164,7 @@ main .formulario {
           align-items: center;
 }
 
-main .formulario .tab {
+#bg main .formulario .tab {
   margin-top: 12px;
   overflow: hidden;
   border-top-left-radius: 8px;
@@ -179,7 +180,7 @@ main .formulario .tab {
   background: rgba(114, 101, 136, 0.2);
 }
 
-main .formulario .tab button {
+#bg main .formulario .tab button {
   background-color: inherit;
   border: none;
   outline: none;
@@ -197,17 +198,17 @@ main .formulario .tab button {
   color: #FFFFFF;
 }
 
-main .formulario .tab button:hover {
+#bg main .formulario .tab button:hover {
   background: rgba(114, 101, 136, 0.4);
 }
 
-main .formulario .tab button.active {
+#bg main .formulario .tab button.active {
   background: rgba(114, 101, 136, 0.6);
   color: #DDFF00;
   border-bottom: 2px solid #DDFF00;
 }
 
-main .formulario .tabcontent {
+#bg main .formulario .tabcontent {
   display: none;
   background: rgba(114, 101, 136, 0.6);
   border-top: none;
@@ -218,11 +219,11 @@ main .formulario .tabcontent {
   width: 100%;
 }
 
-main .formulario .form-ingresar {
+#bg main .formulario .form-ingresar {
   padding: 15px;
 }
 
-main .formulario .form-ingresar fieldset {
+#bg main .formulario .form-ingresar fieldset {
   border: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -237,11 +238,11 @@ main .formulario .form-ingresar fieldset {
   gap: 10px;
 }
 
-main .formulario .form-ingresar fieldset .ingresa-usuario, main .formulario .form-ingresar fieldset .ingresa-email, main .formulario .form-ingresar fieldset .ingresa-password {
+#bg main .formulario .form-ingresar fieldset .ingresa-usuario, #bg main .formulario .form-ingresar fieldset .ingresa-email, #bg main .formulario .form-ingresar fieldset .ingresa-password {
   width: 80%;
 }
 
-main .formulario .form-ingresar fieldset .ingresa-usuario input, main .formulario .form-ingresar fieldset .ingresa-email input, main .formulario .form-ingresar fieldset .ingresa-password input {
+#bg main .formulario .form-ingresar fieldset .ingresa-usuario input, #bg main .formulario .form-ingresar fieldset .ingresa-email input, #bg main .formulario .form-ingresar fieldset .ingresa-password input {
   border: 1px solid #FFFFFF;
   border-radius: 8px;
   background: none;
@@ -257,27 +258,27 @@ main .formulario .form-ingresar fieldset .ingresa-usuario input, main .formulari
   width: 100%;
 }
 
-main .formulario .form-ingresar fieldset .ingresa-usuario input::-webkit-input-placeholder, main .formulario .form-ingresar fieldset .ingresa-email input::-webkit-input-placeholder, main .formulario .form-ingresar fieldset .ingresa-password input::-webkit-input-placeholder {
+#bg main .formulario .form-ingresar fieldset .ingresa-usuario input::-webkit-input-placeholder, #bg main .formulario .form-ingresar fieldset .ingresa-email input::-webkit-input-placeholder, #bg main .formulario .form-ingresar fieldset .ingresa-password input::-webkit-input-placeholder {
   color: #FFFFFF;
   opacity: 60%;
 }
 
-main .formulario .form-ingresar fieldset .ingresa-usuario input:-ms-input-placeholder, main .formulario .form-ingresar fieldset .ingresa-email input:-ms-input-placeholder, main .formulario .form-ingresar fieldset .ingresa-password input:-ms-input-placeholder {
+#bg main .formulario .form-ingresar fieldset .ingresa-usuario input:-ms-input-placeholder, #bg main .formulario .form-ingresar fieldset .ingresa-email input:-ms-input-placeholder, #bg main .formulario .form-ingresar fieldset .ingresa-password input:-ms-input-placeholder {
   color: #FFFFFF;
   opacity: 60%;
 }
 
-main .formulario .form-ingresar fieldset .ingresa-usuario input::-ms-input-placeholder, main .formulario .form-ingresar fieldset .ingresa-email input::-ms-input-placeholder, main .formulario .form-ingresar fieldset .ingresa-password input::-ms-input-placeholder {
+#bg main .formulario .form-ingresar fieldset .ingresa-usuario input::-ms-input-placeholder, #bg main .formulario .form-ingresar fieldset .ingresa-email input::-ms-input-placeholder, #bg main .formulario .form-ingresar fieldset .ingresa-password input::-ms-input-placeholder {
   color: #FFFFFF;
   opacity: 60%;
 }
 
-main .formulario .form-ingresar fieldset .ingresa-usuario input::placeholder, main .formulario .form-ingresar fieldset .ingresa-email input::placeholder, main .formulario .form-ingresar fieldset .ingresa-password input::placeholder {
+#bg main .formulario .form-ingresar fieldset .ingresa-usuario input::placeholder, #bg main .formulario .form-ingresar fieldset .ingresa-email input::placeholder, #bg main .formulario .form-ingresar fieldset .ingresa-password input::placeholder {
   color: #FFFFFF;
   opacity: 60%;
 }
 
-main .formulario .form-ingresar .text-log {
+#bg main .formulario .form-ingresar .text-log {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -290,7 +291,7 @@ main .formulario .form-ingresar .text-log {
   margin-top: 15px;
 }
 
-main .formulario .form-ingresar .text-log h3 {
+#bg main .formulario .form-ingresar .text-log h3 {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
@@ -308,7 +309,7 @@ main .formulario .form-ingresar .text-log h3 {
   margin: 0 3% 0 1%;
 }
 
-main .formulario .form-ingresar .text-log a {
+#bg main .formulario .form-ingresar .text-log a {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
@@ -328,7 +329,7 @@ main .formulario .form-ingresar .text-log a {
   margin-left: 6%;
 }
 
-main .formulario .form-ingresar .botones {
+#bg main .formulario .form-ingresar .botones {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -338,7 +339,7 @@ main .formulario .form-ingresar .botones {
   margin-top: 10px;
 }
 
-main .formulario .form-ingresar .boton-registro {
+#bg main .formulario .form-ingresar .boton-registro {
   text-decoration: none;
   font-family: 'Poppins';
   font-style: normal;
@@ -362,18 +363,17 @@ main .formulario .form-ingresar .boton-registro {
           transition-duration: 0.4s;
 }
 
-main .formulario .form-ingresar .boton-registro:hover {
+#bg main .formulario .form-ingresar .boton-registro:hover {
   background: #ddff00;
   -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 30px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 30px 0 rgba(0, 0, 0, 0.19);
 }
 
-main .img-ingresar, main .img-ingresar2 {
+#bg main .img-ingresar, #bg main .img-ingresar2 {
   display: none;
 }
 
-/*Footer styles*/
-footer {
+#bg footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,11 +394,11 @@ footer {
   background: rgba(31, 1, 41, 0.5);
 }
 
-footer ul .footer-link {
+#bg footer ul .footer-link {
   display: none;
 }
 
-footer ul li {
+#bg footer ul li {
   list-style-type: none;
   font-family: 'Poppins';
   font-style: normal;
@@ -411,7 +411,7 @@ footer ul li {
   color: rgba(221, 255, 0, 0.5);
 }
 
-footer ul li a {
+#bg footer ul li a {
   text-decoration: none;
   color: #CAC4D0;
   opacity: 90%;
@@ -433,89 +433,93 @@ footer ul li a {
 }
 
 @media screen and (min-width: 576px) {
-  /*Main styles*/
-  main {
+  #bg {
+    /*Main styles*/
+  }
+  #bg main {
     height: 80vh;
   }
-  main .texto-inicio {
+  #bg main .texto-inicio {
     margin-top: 12px;
   }
-  main .texto-inicio h1 {
+  #bg main .texto-inicio h1 {
     font-size: 36px;
   }
-  main .texto-inicio h2 {
+  #bg main .texto-inicio h2 {
     font-size: 28px;
   }
-  main .texto-inicio h3 {
+  #bg main .texto-inicio h3 {
     font-size: 30px;
   }
-  main .formulario .tab {
+  #bg main .formulario .tab {
     margin-top: 10px;
   }
-  footer {
+  #bg footer {
     height: 12vh;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  header .logo img {
+  #bg {
+    /*Main styles*/
+  }
+  #bg header .logo img {
     width: 160px;
   }
-  /*Main styles*/
-  main {
+  #bg main {
     height: 86vh;
   }
-  main .texto-inicio {
+  #bg main .texto-inicio {
     margin-top: 0px;
     gap: 4px;
   }
-  main .texto-inicio h1 {
+  #bg main .texto-inicio h1 {
     font-weight: 700;
     font-size: 80px;
     letter-spacing: -0.5px;
   }
-  main .texto-inicio h2 {
+  #bg main .texto-inicio h2 {
     font-size: 40px;
   }
-  main .texto-inicio h3 {
+  #bg main .texto-inicio h3 {
     font-weight: 700;
-    font-size: 44px;
+    font-size: 40px;
     margin-top: 30px;
   }
-  main .formulario .tab {
+  #bg main .formulario .tab {
     margin-top: 20px;
     width: 70%;
     height: 50px;
   }
-  main .formulario .tab button {
+  #bg main .formulario .tab button {
     width: 70%;
     font-size: 16px;
     line-height: 16px;
   }
-  main .formulario .tabcontent {
+  #bg main .formulario .tabcontent {
     width: 70%;
   }
-  main .formulario .form-ingresar fieldset .ingresa-usuario input, main .formulario .form-ingresar fieldset .ingresa-email input, main .formulario .form-ingresar fieldset .ingresa-password input {
+  #bg main .formulario .form-ingresar fieldset .ingresa-usuario input, #bg main .formulario .form-ingresar fieldset .ingresa-email input, #bg main .formulario .form-ingresar fieldset .ingresa-password input {
     height: 50px;
     font-size: 18px;
     line-height: 18px;
   }
-  main .formulario .form-ingresar .text-log {
+  #bg main .formulario .form-ingresar .text-log {
     margin-top: 20px;
   }
-  main .formulario .form-ingresar .text-log h3, main .formulario .form-ingresar .text-log a {
+  #bg main .formulario .form-ingresar .text-log h3, #bg main .formulario .form-ingresar .text-log a {
     font-size: 16px;
     line-height: 16px;
   }
-  main .formulario .form-ingresar .botones {
+  #bg main .formulario .form-ingresar .botones {
     margin-top: 20px;
   }
-  main .formulario .form-ingresar .botones .boton-registro {
+  #bg main .formulario .form-ingresar .botones .boton-registro {
     font-size: 18px;
     line-height: 18px;
     padding: 12px 40px;
   }
-  main .img-ingresar {
+  #bg main .img-ingresar {
     display: block;
     position: absolute;
     width: 360px;
@@ -523,7 +527,7 @@ footer ul li a {
     right: -107px;
     bottom: 50px;
   }
-  main .img-ingresar2 {
+  #bg main .img-ingresar2 {
     display: block;
     position: absolute;
     width: 360px;
@@ -533,10 +537,10 @@ footer ul li a {
     left: -107px;
     bottom: 50px;
   }
-  footer {
+  #bg footer {
     height: 6vh;
   }
-  footer ul {
+  #bg footer ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -545,10 +549,10 @@ footer ul li a {
             justify-content: space-evenly;
     width: 100%;
   }
-  footer ul .footer-link {
+  #bg footer ul .footer-link {
     display: block;
   }
-  footer ul li {
+  #bg footer ul li {
     font-size: 12px;
     line-height: 12px;
     padding: 0;
