@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link CSS -->
     <link rel="stylesheet" href="../css/style.css">
+    <!-- Icon library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <!-- Link typography -->
     <!-- Montserrat Alternates and Poppins (Regular) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,17 +16,74 @@
     <!-- Page title -->
     <title>Home</title>
 </head>
+
 <body>
-    <div id="bg">
-        <footer>
-            <ul>
-                <li><a href="#">Preguntas Frecuentes</a></li>
-                <li class="footer-link"><a href="#">Prensa</a></li>
-                <li><a href="#">Términos y Condiciones</a></li>
-                <li class="footer-link"><a href="#">Privacidad</a></li>
-                <li>Creado por Alan M. Vazquez</li>
-            </ul>
-        </footer>
-    </div>
+  <div id="home">
+    <!--========== HEADER ==========-->
+              <header class="header">
+                <div class="header__container">
+                    <img src="assets/img/perfil.jpg" alt="" class="header__img">
+    
+                    <a href="#" class="header__logo">Bedimcode</a>
+    
+                    <div class="header__search">
+                        <input type="search" placeholder="Search" class="header__input">
+                        <i class='bx bx-search header__icon'></i>
+                    </div>
+    
+                    <div class="header__toggle">
+                        <i class='bx bx-menu' id="header-toggle"></i>
+                    </div>
+                </div>
+              </header>
+    <!--========== NAV ==========-->
+              <div class="nav" id="nav">
+                <nav class="nav__content">
+                  <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-chevron-right' ></i>
+                  </div>
+                  <a href="#" class="nav__logo">
+                  <i class='bx bxs-heart' ></i>
+                  <span class="nav__logo-name">Healthy</span>
+                  </a>
+                  <div class="nav__list">
+                    <a href="#" class="nav__link active-link">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="nav__name">Dashboard</span>
+                    </a>
+                    <a href="#" class="nav__link">
+                    <i class='bx bx-file'></i>
+                    <span class="nav__name">Appointments</span>
+                    </a>
+                    <a href="#" class="nav__link">
+                    <i class='bx bx-envelope' ></i>
+                    <span class="nav__name">Messages</span>
+                    </a>
+                    <a href="#" class="nav__link">
+                    <i class='bx bx-bar-chart-square' ></i>
+                    <span class="nav__name">Statistic</span>
+                    </a>
+                    <a href="#" class="nav__link">
+                    <i class='bx bx-cog' ></i>
+                    <span class="nav__name">Settings</span>
+                    </a>
+                    <a href="#" class="nav__link">
+                      <i class='bx bx-cog' ></i>
+                      <span class="nav__name">Settings</span>
+                    </a>
+                  </div>
+                </nav>
+              </div>  
+    <!--========== MAIN ==========-->
+              <main class="container section">
+                <h1>Components</h1>
+              </main>
+            </div>
+    <!--========== FOOTER ==========-->
+                
+                        
+
+  <script src="../js/script-home.js"></script>
+
 </body>
 </html>

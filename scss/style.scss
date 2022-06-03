@@ -13,10 +13,13 @@
 
 html body{
     height: 100vh;
+    a{
+        text-decoration: none;
+    }
 }
 
 // Import Pages Styles
-@import "pageStyles/iniciar";
+@import "pageStyles/index";
 @import "pageStyles/home";
 
 

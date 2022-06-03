@@ -16,147 +16,142 @@
 @media screen and (min-width: 576px) {
 
     #bg{
-
-    /*Main styles*/
-
-    main{
-        height: 80vh;
-        .texto-inicio{
-            margin-top: 12px;
-            h1{
-                font-size: 36px; 
+        main{
+            height: 80vh;
+            .texto-inicio{
+                margin-top: 12px;
+                h1{
+                    font-size: 36px; 
+                }
+                h2{
+                    font-size: 28px; 
+                }
+                h3{
+                    font-size: 30px; 
+                }            
             }
-            h2{
-                font-size: 28px; 
-            }
-            h3{
-                font-size: 30px; 
-            }            
-        }
-
-        .formulario{
-            .tab{
-                margin-top: 10px;
+    
+            .formulario{
+                .tab{
+                    margin-top: 10px;
+                }
             }
         }
-    }
-
-    footer{
-        height: 12vh;
-    }
+    
+        footer{
+            height: 12vh;
+        }
 }
 }
 
 @media screen and (min-width: 1024px) {
 
     #bg{
-
-    header{
-        .logo img{
-            width: 160px;
+        header{
+            .logo img{
+                width: 160px;
+            }
         }
-    }
-
-/*Main styles*/
-
-    main{
-        height: 86vh;
-        .texto-inicio{
-            margin-top: 0px;
-            gap: 4px;
-            h1{
-                font-weight: 700;
-                font-size: 80px;
-                letter-spacing: -0.5px;
+    
+        main{
+            height: 86vh;
+            .texto-inicio{
+                margin-top: 0px;
+                gap: 0px;
+                h1{
+                    font-weight: 700;
+                    font-size: 60px;
+                    letter-spacing: -0.5px;
+                }
+                h2{
+                    font-size: 36px;
+                    margin-top: 0px; 
+                }
+                h3{
+                    font-weight: 600;
+                    font-size: 40px;
+                    margin-top: 0px;
+                }
+                
             }
-            h2{
-                font-size: 40px;
-            }
-            h3{
-                font-weight: 700;
-                font-size: 40px;
-                margin-top: 30px;
-            }
-            
-        }
-
-        .formulario{
-            .tab{
-                margin-top: 20px;
-                width: 70%;
-                height: 50px;
-                button{
+    
+            .formulario{
+                .tab{
+                    margin-top: 0px;
                     width: 70%;
-                    font-size: 16px;
-                    line-height: 16px;
-                }
-            }
-            .tabcontent{
-                width: 70%;
-            }
-            .form-ingresar{
-                fieldset{
-                    .ingresa-usuario, .ingresa-email, .ingresa-password{
-                        input{
-                            height: 50px;
-                            font-size: 18px;
-                            line-height: 18px;
-                        }
-                    }
-                }
-                .text-log{
-                    margin-top: 20px;
-                    h3, a{
+                    height: 50px;
+                    button{
+                        width: 70%;
                         font-size: 16px;
                         line-height: 16px;
                     }
                 }
-                .botones{
-                    margin-top: 20px;
-                    .boton-registro{
-                        font-size: 18px;
-                        line-height: 18px;
-                        padding: 12px 40px;
+                .tabcontent{
+                    width: 70%;
+                }
+                .form-ingresar{
+                    fieldset{
+                        .ingresa-usuario, .ingresa-email, .ingresa-password{
+                            input{
+                                height: 50px;
+                                font-size: 18px;
+                                line-height: 18px;
+                            }
+                        }
                     }
+                    .text-log{
+                        margin-top: 20px;
+                        h3, a{
+                            font-size: 16px;
+                            line-height: 16px;
+                        }
                     }
+                    .botones{
+                        margin-top: 20px;
+                        .boton-registro{
+                            font-size: 18px;
+                            line-height: 18px;
+                            padding: 12px 40px;
+                        }
+                        }
+                }
             }
-        }
-        
-
-        .img-ingresar{
-            display: block;
-            position: absolute;
-            width: 360px;
-            height: 520px;
-            right: -107px;
-            bottom: 50px;
-        }
-        .img-ingresar2{
-            display: block;
-            position: absolute;
-            width: 360px;
-            height: 520px;
-            transform: matrix(-1, 0, 0, 1, 0, 0);
-            left: -107px;
-            bottom: 50px;
-        }
-    }
-
-    footer{
-        height: 6vh;
-        ul{
-            .footer-link{
+            
+    
+            .img-ingresar{
                 display: block;
+                position: absolute;
+                width: 360px;
+                height: 520px;
+                right: -107px;
+                bottom: 50px;
             }
-            display: flex;
-            justify-content: space-evenly;
-            width: 100%;
-            li{
-                font-size: 12px;
-                line-height: 12px;
-                padding: 0;
+            .img-ingresar2{
+                display: block;
+                position: absolute;
+                width: 360px;
+                height: 520px;
+                transform: matrix(-1, 0, 0, 1, 0, 0);
+                left: -107px;
+                bottom: 50px;
             }
         }
-    }
+    
+        footer{
+            height: 6vh;
+            ul{
+                .footer-link{
+                    display: block;
+                }
+                display: flex;
+                justify-content: space-evenly;
+                width: 100%;
+                li{
+                    font-size: 12px;
+                    line-height: 12px;
+                    padding: 0;
+                }
+            }
+        }
 }
 }
