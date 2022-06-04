@@ -22,7 +22,7 @@
 }
 .sidebar .logo-details i{
   font-size: 30px;
-  color: #fff;
+  color: $text-color;
   height: 50px;
   min-width: 78px;
   text-align: center;
@@ -30,7 +30,7 @@
 }
 .sidebar .logo-details .logo_name{
   font-size: 22px;
-  color: #fff;
+  color: $text-color;
   font-weight: 600;
   transition: 0.3s ease;
   transition-delay: 0.1s;
@@ -57,7 +57,7 @@
   transition: all 0.4s ease;
 }
 .sidebar .nav-links li:hover{
-  background: #1d1b31;
+  background: $bar-color;
 }
 .sidebar .nav-links li .iocn-link{
   display: flex;
@@ -72,7 +72,7 @@
   min-width: 78px;
   text-align: center;
   line-height: 50px;
-  color: #fff;
+  color: $text-color;
   font-size: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -91,7 +91,7 @@
 .sidebar .nav-links li a .link_name{
   font-size: 18px;
   font-weight: 400;
-  color: #fff;
+  color: $text-color;
   transition: all 0.4s ease;
 }
 .sidebar.close .nav-links li a .link_name{
@@ -101,14 +101,14 @@
 .sidebar .nav-links li .sub-menu{
   padding: 6px 6px 14px 80px;
   margin-top: -10px;
-  background: #1d1b31;
+  background: $bar-color;
   display: none;
 }
 .sidebar .nav-links li.showMenu .sub-menu{
   display: block;
 }
 .sidebar .nav-links li .sub-menu a{
-  color: #fff;
+  color: $text-color;
   font-size: 15px;
   padding: 5px 0;
   white-space: nowrap;
@@ -162,7 +162,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #1d1b31;
+  background: $bg-color;
   padding: 12px 0;
   transition: all 0.5s ease;
 }
@@ -182,7 +182,7 @@
   object-fit: cover;
   border-radius: 16px;
   margin: 0 14px 0 12px;
-  background: #1d1b31;
+  background: $bg-color;
   transition: all 0.5s ease;
 }
 .sidebar.close .profile-details img{
@@ -190,7 +190,7 @@
 }
 .sidebar .profile-details .profile_name,
 .sidebar .profile-details .job{
-  color: #fff;
+  color: $footer-text-color;
   font-size: 18px;
   font-weight: 500;
   white-space: nowrap;
