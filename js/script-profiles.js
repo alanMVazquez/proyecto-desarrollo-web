@@ -1,4 +1,4 @@
-const users = ['Perfil', 'Perfil2', 'Perfil3'];
+const users = ['Perfil'];
 
 const members = document.querySelector('.members');
 const addIcon = document.querySelector('.addIcon');
