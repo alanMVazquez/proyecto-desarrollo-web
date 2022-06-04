@@ -21,6 +21,7 @@ header{
     filter: drop-shadow(0px 1px 2px $bar-color); 
     .logo img{
         width: 120px;
+        cursor: pointer;
     }
 }
 
@@ -38,8 +39,6 @@ main{
         align-items: center;
         margin-top: 8px;
         h1{
-            font-family: 'Montserrat Alternates';
-            font-style: normal;
             font-weight: 600;
             font-size: 30px;
             letter-spacing: 0.5px;
@@ -49,8 +48,6 @@ main{
             color: $text-color;
         }
         h2{
-            font-family: 'Montserrat Alternates';
-            font-style: normal;
             font-weight: 500;
             font-size: 16px;
             letter-spacing: 0.15px;
@@ -61,8 +58,6 @@ main{
             margin-top: 14px; 
         }
         h3{
-            font-family: 'Montserrat Alternates';
-            font-style: normal;
             font-weight: 600;
             font-size: 20px;
             display: flex;

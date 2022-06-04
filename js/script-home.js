@@ -1,21 +1,13 @@
-/*=============== LINK ACTIVE ===============*/
-const linkColor = document.querySelectorAll('.nav__link')
-function colorLink(){
-  linkColor.forEach(l => l.classList.remove('active-link'))
-  this.classList.add('active-link')
-}
-linkColor.forEach(l => l.addEventListener('click', colorLink))
-/*=============== SHOW HIDDEN MENU ===============*/
-const showMenu = (toggleId, navbarId) =>{
-  const toggle = document.getElementById(toggleId),
-  navbar = document.getElementById(navbarId)
-  if(toggle && navbar){
-      toggle.addEventListener('click', ()=>{
-          /* Show menu */
-          navbar.classList.toggle('show-menu')
-          /* Rotate toggle icon */
-          toggle.classList.toggle('rotate-icon')
-      })
+let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+    let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+    arrowParent.classList.toggle("showMenu");
+    });
   }
-}
-showMenu('nav-toggle','nav')
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });

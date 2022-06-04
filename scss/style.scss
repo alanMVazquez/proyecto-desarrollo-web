@@ -1,9 +1,14 @@
+// Import Font
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Poppins&display=swap");
+
 /*Reset*/
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat Alternates';
 }
 
 // Imports utilities
@@ -20,8 +25,8 @@ html body{
 
 // Import Pages Styles
 @import "pageStyles/index";
+@import "pageStyles/profile";
 @import "pageStyles/home";
-
 
 // Import MediaQueries
 @import "utilities/media";
