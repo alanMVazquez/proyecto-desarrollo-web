@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Poppins&display=swap");
 /*Reset*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -584,39 +583,28 @@ html body a {
   color: #fff;
 }
 
-#bg-home {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background: rgba(20, 0, 26, 0.98);
-  /* Google Fonts Import Link */
-}
-
-#bg-home * {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-#bg-home .sidebar {
+.sidebar {
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 260px;
-  background: #11101d;
+  background: rgba(13, 0, 17, 0.6);
+  -webkit-box-shadow: 0px 1px 1px 3px rgba(13, 0, 17, 0.2);
+          box-shadow: 0px 1px 1px 3px rgba(13, 0, 17, 0.2);
+  -webkit-filter: drop-shadow(0px 1px 2px rgba(13, 0, 17, 0.6));
+          filter: drop-shadow(0px 1px 2px rgba(13, 0, 17, 0.6));
   z-index: 100;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  font-family: 'Poppins', sans-serif;
 }
 
-#bg-home .sidebar.close {
+.sidebar.close {
   width: 78px;
 }
 
-#bg-home .sidebar .logo-details {
+.sidebar .logo-details {
   height: 60px;
   width: 100%;
   display: -webkit-box;
@@ -627,7 +615,7 @@ html body a {
           align-items: center;
 }
 
-#bg-home .sidebar .logo-details i {
+.sidebar .logo-details i {
   font-size: 30px;
   color: #fff;
   height: 50px;
@@ -636,7 +624,7 @@ html body a {
   line-height: 50px;
 }
 
-#bg-home .sidebar .logo-details .logo_name {
+.sidebar .logo-details .logo_name {
   font-size: 22px;
   color: #fff;
   font-weight: 600;
@@ -646,39 +634,39 @@ html body a {
           transition-delay: 0.1s;
 }
 
-#bg-home .sidebar.close .logo-details .logo_name {
+.sidebar.close .logo-details .logo_name {
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
   opacity: 0;
   pointer-events: none;
 }
 
-#bg-home .sidebar .nav-links {
+.sidebar .nav-links {
   height: 100%;
   padding: 30px 0 150px 0;
   overflow: auto;
 }
 
-#bg-home .sidebar.close .nav-links {
+.sidebar.close .nav-links {
   overflow: visible;
 }
 
-#bg-home .sidebar .nav-links::-webkit-scrollbar {
+.sidebar .nav-links::-webkit-scrollbar {
   display: none;
 }
 
-#bg-home .sidebar .nav-links li {
+.sidebar .nav-links li {
   position: relative;
   list-style: none;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 
-#bg-home .sidebar .nav-links li:hover {
+.sidebar .nav-links li:hover {
   background: #1d1b31;
 }
 
-#bg-home .sidebar .nav-links li .iocn-link {
+.sidebar .nav-links li .iocn-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -690,11 +678,11 @@ html body a {
           justify-content: space-between;
 }
 
-#bg-home .sidebar.close .nav-links li .iocn-link {
+.sidebar.close .nav-links li .iocn-link {
   display: block;
 }
 
-#bg-home .sidebar .nav-links li i {
+.sidebar .nav-links li i {
   height: 50px;
   min-width: 78px;
   text-align: center;
@@ -706,16 +694,16 @@ html body a {
   transition: all 0.3s ease;
 }
 
-#bg-home .sidebar .nav-links li.showMenu i.arrow {
+.sidebar .nav-links li.showMenu i.arrow {
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
 }
 
-#bg-home .sidebar.close .nav-links i.arrow {
+.sidebar.close .nav-links i.arrow {
   display: none;
 }
 
-#bg-home .sidebar .nav-links li a {
+.sidebar .nav-links li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -725,7 +713,7 @@ html body a {
   text-decoration: none;
 }
 
-#bg-home .sidebar .nav-links li a .link_name {
+.sidebar .nav-links li a .link_name {
   font-size: 18px;
   font-weight: 400;
   color: #fff;
@@ -733,23 +721,23 @@ html body a {
   transition: all 0.4s ease;
 }
 
-#bg-home .sidebar.close .nav-links li a .link_name {
+.sidebar.close .nav-links li a .link_name {
   opacity: 0;
   pointer-events: none;
 }
 
-#bg-home .sidebar .nav-links li .sub-menu {
+.sidebar .nav-links li .sub-menu {
   padding: 6px 6px 14px 80px;
   margin-top: -10px;
   background: #1d1b31;
   display: none;
 }
 
-#bg-home .sidebar .nav-links li.showMenu .sub-menu {
+.sidebar .nav-links li.showMenu .sub-menu {
   display: block;
 }
 
-#bg-home .sidebar .nav-links li .sub-menu a {
+.sidebar .nav-links li .sub-menu a {
   color: #fff;
   font-size: 15px;
   padding: 5px 0;
@@ -759,11 +747,11 @@ html body a {
   transition: all 0.3s ease;
 }
 
-#bg-home .sidebar .nav-links li .sub-menu a:hover {
+.sidebar .nav-links li .sub-menu a:hover {
   opacity: 1;
 }
 
-#bg-home .sidebar.close .nav-links li .sub-menu {
+.sidebar.close .nav-links li .sub-menu {
   position: absolute;
   left: 100%;
   top: -10px;
@@ -777,7 +765,7 @@ html body a {
   transition: 0s;
 }
 
-#bg-home .sidebar.close .nav-links li:hover .sub-menu {
+.sidebar.close .nav-links li:hover .sub-menu {
   top: 0;
   opacity: 1;
   pointer-events: auto;
@@ -785,17 +773,17 @@ html body a {
   transition: all 0.4s ease;
 }
 
-#bg-home .sidebar .nav-links li .sub-menu .link_name {
+.sidebar .nav-links li .sub-menu .link_name {
   display: none;
 }
 
-#bg-home .sidebar.close .nav-links li .sub-menu .link_name {
+.sidebar.close .nav-links li .sub-menu .link_name {
   font-size: 18px;
   opacity: 1;
   display: block;
 }
 
-#bg-home .sidebar .nav-links li .sub-menu.blank {
+.sidebar .nav-links li .sub-menu.blank {
   opacity: 1;
   pointer-events: auto;
   padding: 3px 20px 6px 16px;
@@ -803,13 +791,13 @@ html body a {
   pointer-events: none;
 }
 
-#bg-home .sidebar .nav-links li:hover .sub-menu.blank {
+.sidebar .nav-links li:hover .sub-menu.blank {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 
-#bg-home .sidebar .profile-details {
+.sidebar .profile-details {
   position: fixed;
   bottom: 0;
   width: 260px;
@@ -828,15 +816,15 @@ html body a {
   transition: all 0.5s ease;
 }
 
-#bg-home .sidebar.close .profile-details {
+.sidebar.close .profile-details {
   background: none;
 }
 
-#bg-home .sidebar.close .profile-details {
+.sidebar.close .profile-details {
   width: 78px;
 }
 
-#bg-home .sidebar .profile-details .profile-content {
+.sidebar .profile-details .profile-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -845,7 +833,7 @@ html body a {
           align-items: center;
 }
 
-#bg-home .sidebar .profile-details img {
+.sidebar .profile-details img {
   height: 52px;
   width: 52px;
   -o-object-fit: cover;
@@ -857,88 +845,59 @@ html body a {
   transition: all 0.5s ease;
 }
 
-#bg-home .sidebar.close .profile-details img {
+.sidebar.close .profile-details img {
   padding: 10px;
 }
 
-#bg-home .sidebar .profile-details .profile_name,
-#bg-home .sidebar .profile-details .job {
+.sidebar .profile-details .profile_name,
+.sidebar .profile-details .job {
   color: #fff;
   font-size: 18px;
   font-weight: 500;
   white-space: nowrap;
 }
 
-#bg-home .sidebar.close .profile-details i,
-#bg-home .sidebar.close .profile-details .profile_name,
-#bg-home .sidebar.close .profile-details .job {
+.sidebar.close .profile-details i,
+.sidebar.close .profile-details .profile_name,
+.sidebar.close .profile-details .job {
   display: none;
 }
 
-#bg-home .sidebar .profile-details .job {
+.sidebar .profile-details .job {
   font-size: 12px;
 }
 
-#bg-home .home-section {
+#bg-home {
   position: relative;
-  background: #E4E9F7;
+  background-color: rgba(20, 0, 26, 0.98);
   height: 100vh;
   left: 260px;
   width: calc(100% - 260px);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  overflow: hidden;
 }
 
-#bg-home .sidebar.close ~ .home-section {
-  left: 78px;
-  width: calc(100% - 78px);
-}
-
-#bg-home .home-section .home-content {
-  height: 60px;
+#bg-home .home-nav {
+  height: 8vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: rgba(13, 0, 17, 0.6);
+  -webkit-box-shadow: 0px 1px 3px 1px rgba(13, 0, 17, 0.2);
+          box-shadow: 0px 1px 3px 1px rgba(13, 0, 17, 0.2);
+  -webkit-filter: drop-shadow(0px 1px 2px rgba(13, 0, 17, 0.6));
+          filter: drop-shadow(0px 1px 2px rgba(13, 0, 17, 0.6));
 }
 
-#bg-home .home-section .home-content .bx-menu,
-#bg-home .home-section .home-content .text {
-  color: #11101d;
-  font-size: 35px;
-}
-
-#bg-home .home-section .home-content .bx-menu {
+#bg-home .home-nav .bx-menu {
+  color: #ddff00;
+  font-size: 24px;
   margin: 0 15px;
   cursor: pointer;
-}
-
-#bg-home .home-section .home-content .text {
-  font-size: 26px;
-  font-weight: 600;
-}
-
-@media (max-width: 400px) {
-  #bg-home .sidebar.close .nav-links li .sub-menu {
-    display: none;
-  }
-  #bg-home .sidebar {
-    width: 78px;
-  }
-  #bg-home .sidebar.close {
-    width: 0;
-  }
-  #bg-home .home-section {
-    left: 78px;
-    width: calc(100% - 78px);
-    z-index: 100;
-  }
-  #bg-home .sidebar.close ~ .home-section {
-    width: 100%;
-    left: 0;
-  }
 }
 
 #bg-home footer {
@@ -955,7 +914,7 @@ html body a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: fixed;
+  position: relative;
   width: 100%;
   height: 14vh;
   bottom: 0px;
@@ -968,8 +927,6 @@ html body a {
 
 #bg-home footer ul li {
   list-style-type: none;
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
@@ -982,6 +939,44 @@ html body a {
 #bg-home footer ul li a {
   color: #CAC4D0;
   opacity: 90%;
+}
+
+.sidebar.close ~ #bg-home {
+  left: 78px;
+  width: calc(100% - 78px);
+}
+
+@media (max-width: 576px) {
+  .sidebar.close .nav-links li .sub-menu {
+    display: none;
+  }
+  .sidebar {
+    width: 78px;
+  }
+  .sidebar .profile-details {
+    width: 78px;
+  }
+  .sidebar.close {
+    width: 0;
+  }
+  .sidebar.close .profile-details {
+    width: 0px;
+  }
+  .sidebar.close .profile-details img {
+    display: none;
+  }
+  #bg-home {
+    left: 78px;
+    width: calc(100% - 78px);
+    z-index: 100;
+  }
+  #bg-home .home-nav .bx-menu {
+    font-size: 32px;
+  }
+  .sidebar.close ~ #bg-home {
+    width: 100%;
+    left: 0;
+  }
 }
 
 /*Media Queries*/

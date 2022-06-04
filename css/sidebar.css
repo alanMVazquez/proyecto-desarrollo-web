@@ -1,13 +1,3 @@
-/* Google Fonts Import Link */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
 .sidebar {
   position: fixed;
   top: 0;
@@ -18,6 +8,7 @@
   z-index: 100;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  font-family: 'Poppins', sans-serif;
 }
 
 .sidebar.close {
@@ -285,67 +276,5 @@
 
 .sidebar .profile-details .job {
   font-size: 12px;
-}
-
-.home-section {
-  position: relative;
-  background: #E4E9F7;
-  height: 100vh;
-  left: 260px;
-  width: calc(100% - 260px);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.sidebar.close ~ .home-section {
-  left: 78px;
-  width: calc(100% - 78px);
-}
-
-.home-section .home-content {
-  height: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.home-section .home-content .bx-menu,
-.home-section .home-content .text {
-  color: #11101d;
-  font-size: 35px;
-}
-
-.home-section .home-content .bx-menu {
-  margin: 0 15px;
-  cursor: pointer;
-}
-
-.home-section .home-content .text {
-  font-size: 26px;
-  font-weight: 600;
-}
-
-@media (max-width: 400px) {
-  .sidebar.close .nav-links li .sub-menu {
-    display: none;
-  }
-  .sidebar {
-    width: 78px;
-  }
-  .sidebar.close {
-    width: 0;
-  }
-  .home-section {
-    left: 78px;
-    width: calc(100% - 78px);
-    z-index: 100;
-  }
-  .sidebar.close ~ .home-section {
-    width: 100%;
-    left: 0;
-  }
 }
 /*# sourceMappingURL=sidebar.css.map */

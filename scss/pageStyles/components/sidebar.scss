@@ -1,20 +1,15 @@
-/* Google Fonts Import Link */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
 .sidebar{
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 260px;
-  background: #11101d;
+  background: $bar-color;
+  box-shadow: 0px 1px 1px 3px $shadow-color;
+  filter: drop-shadow(0px 1px 2px $bar-color);
   z-index: 100;
   transition: all 0.5s ease;
+  font-family: 'Poppins', sans-serif;
 }
 .sidebar.close{
   width: 78px;
@@ -207,54 +202,4 @@
 }
 .sidebar .profile-details .job{
   font-size: 12px;
-}
-.home-section{
-  position: relative;
-  background: #E4E9F7;
-  height: 100vh;
-  left: 260px;
-  width: calc(100% - 260px);
-  transition: all 0.5s ease;
-}
-.sidebar.close ~ .home-section{
-  left: 78px;
-  width: calc(100% - 78px);
-}
-.home-section .home-content{
-  height: 60px;
-  display: flex;
-  align-items: center;
-}
-.home-section .home-content .bx-menu,
-.home-section .home-content .text{
-  color: #11101d;
-  font-size: 35px;
-}
-.home-section .home-content .bx-menu{
-  margin: 0 15px;
-  cursor: pointer;
-}
-.home-section .home-content .text{
-  font-size: 26px;
-  font-weight: 600;
-}
-@media (max-width: 400px) {
-  .sidebar.close .nav-links li .sub-menu{
-    display: none;
-  }
-  .sidebar{
-    width: 78px;
-  }
-  .sidebar.close{
-    width: 0;
-  }
-  .home-section{
-    left: 78px;
-    width: calc(100% - 78px);
-    z-index: 100;
-  }
-  .sidebar.close ~ .home-section{
-    width: 100%;
-    left: 0;
-  }
 }
