@@ -6,7 +6,7 @@ const addIcon = document.querySelector('.addIcon');
 const userIcons = () => {
     users.reverse();
     users.map((curElem) => {
-        members.insertAdjacentHTML('afterbegin', `
+        members.insertAdjacentHTML('beforeend', `
         <a href="./home.html" class="btn"><span>${curElem}</span></a>
         `);
     })
@@ -18,7 +18,7 @@ addIcon.addEventListener('click', () => {
     if(userName != null && !users.includes(userName)){
         users.push(userName);
         console.log(users);
-        members.insertAdjacentHTML('afterbegin', `
+        members.insertAdjacentHTML('beforeend', `
         <a href="#" class="btn"><span>${userName}</span></a>
         `);
     }else{

@@ -504,15 +504,15 @@ html body a {
   background-size: cover;
 }
 
-#bg-profiles main .members .btn:nth-child(1) {
+#bg-profiles main .members .btn:nth-child(2) {
   background-image: url("../img/profiles/user1.jpg");
 }
 
-#bg-profiles main .members .btn:nth-child(2) {
+#bg-profiles main .members .btn:nth-child(3) {
   background-image: url("../img/profiles/user2.jpg");
 }
 
-#bg-profiles main .members .btn:nth-child(3) {
+#bg-profiles main .members .btn:nth-child(4) {
   background-image: url("../img/profiles/user3.jpg");
 }
 
