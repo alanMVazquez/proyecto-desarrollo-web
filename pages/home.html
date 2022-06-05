@@ -20,18 +20,46 @@
 <body>
     <div class="sidebar close">
       <div class="logo-details">
-        <i class='bx bxl-c-plus-plus'></i>
+        <i><img src="../img/LogoIcon.png" alt=""></i>
         <span class="logo_name">Magima</span>
       </div>
       <ul class="nav-links">
         <!-- Inicio -->
-        <li>
+        <li class="active-link">
           <a href="#">
-            <i class='bx bx-grid-alt' ></i>
+            <i class='bx bx-home-alt-2'></i>
             <span class="link_name">Inicio</span>
           </a>
           <ul class="sub-menu blank">
-            <li><a class="link_name" href="#">Inicio</a></li>
+            <li><a class="link_name active-link" href="#">Inicio</a></li>
+          </ul>
+        </li>
+        <!-- Género -->
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class='bx bx-directions'></i>
+              <span class="link_name">Géneros</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow' ></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Géneros</a></li>
+            <li><a href="#">Acción</a></li>
+            <li><a href="#">Aventura</a></li>
+            <li><a href="#">Bélico</a></li>
+            <li><a href="#">Ciencia Ficción</a></li>
+            <li><a href="#">Comedia</a></li>
+            <li><a href="#">Drama</a></li>
+            <li><a href="#">Erotismo</a></li>
+            <li><a href="#">Fantasía</a></li>
+            <li><a href="#">Gore</a></li>
+            <li><a href="#">Musical</a></li>
+            <li><a href="#">Romance</a></li>
+            <li><a href="#">Suspenso</a></li>
+            <li><a href="#">Thriller</a></li>
+            <li><a href="#">Terror</a></li>
+            <li><a href="#">Western</a></li>
           </ul>
         </li>
         <!-- Explorar -->
@@ -44,58 +72,30 @@
             <li><a class="link_name" href="#">Explorar</a></li>
           </ul>
         </li>
-        <!-- Género -->
-        <li>
-          <div class="iocn-link">
-            <a href="#">
-              <i class='bx bx-plug' ></i>
-              <span class="link_name">Géneros</span>
-            </a>
-            <i class='bx bxs-chevron-down arrow' ></i>
-          </div>
-          <ul class="sub-menu">
-            <li><a class="link_name" href="#">Géneros</a></li>
-            <li><a href="#">UI Face</a></li>
-            <li><a href="#">Pigments</a></li>
-            <li><a href="#">Box Icons</a></li>
-          </ul>
-        </li>
         <!-- Series -->
         <li>
-          <div class="iocn-link">
             <a href="#">
-              <i class='bx bx-collection' ></i>
+              <i class='bx bx-tv'></i>
               <span class="link_name">Series</span>
             </a>
-            <i class='bx bxs-chevron-down arrow' ></i>
-          </div>
-          <ul class="sub-menu">
+          <ul class="sub-menu blank">
             <li><a class="link_name" href="#">Series</a></li>
-            <li><a href="#">Series</a></li>
-            <li><a href="#">Peliculas</a></li>
-            <li><a href="#">OVAs</a></li>
           </ul>
         </li>
         <!-- Peliculas -->
         <li>
-          <div class="iocn-link">
             <a href="#">
-              <i class='bx bx-book-alt' ></i>
+              <i class='bx bx-camera-movie'></i>
               <span class="link_name">Peliculas</span>
             </a>
-            <i class='bx bxs-chevron-down arrow' ></i>
-          </div>
-          <ul class="sub-menu">
+          <ul class="sub-menu blank">
             <li><a class="link_name" href="#">Peliculas</a></li>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Login Form</a></li>
-            <li><a href="#">Card Design</a></li>
           </ul>
         </li>
         <!-- OVAs -->
         <li>
           <a href="#">
-            <i class='bx bx-pie-chart-alt-2' ></i>
+            <i class='bx bx-movie-play'></i>
             <span class="link_name">OVAs</span>
           </a>
           <ul class="sub-menu blank">
@@ -105,7 +105,7 @@
         <!-- Mi Lista -->
         <li>
           <a href="#">
-            <i class='bx bx-line-chart' ></i>
+            <i class='bx bx-list-ul'></i>
             <span class="link_name">Mi Lista</span>
           </a>
           <ul class="sub-menu blank">
@@ -157,15 +157,30 @@
       </div>
 
       <main>
-
+        <div class="video-container">
+          <video autoplay muted loop plays-inline id="bg-video" poster="./img/index/background1.jpg">
+            <source src="../img/home/trailerWorldTrigger.mp4" type="video/mp4">
+          </video>
+        </div> 
+        <div class="vignette-layer"></div>
+        <div class="info-container">
+          <div class="subinfo-container">
+            <div class="info-layer">
+              <div class="title"><img src="../img/home/iconWorldTrigger.png" alt=""></div>
+              <div class="info"><p> Un portal se ha abierto, y de él emergen gigantes criaturas que amenazan a toda la humanidad. ¡La única defensa del planeta es un misterioso grupo de guerreros que han estudiado su extraña tecnología para poder luchar contra ellos!</p></div>
+              <div class="buttons"><a class="boton-watch" href="#">Ver Ahora</a></div>
+            </div>
+        </div>
+        </div>
+        
+        
       </main>
 
       <footer>
         <ul>
             <li><a href="#">Preguntas Frecuentes</a></li>
-            <li class="footer-link"><a href="#">Prensa</a></li>
             <li><a href="#">Términos y Condiciones</a></li>
-            <li class="footer-link"><a href="#">Privacidad</a></li>
+            <li><a href="#">Privacidad</a></li>
             <li>Creado por Alan M. Vazquez</li>
         </ul>
       </footer>

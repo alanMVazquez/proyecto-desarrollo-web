@@ -65,6 +65,19 @@
 }
 }
 
+@media screen and (min-width: 768px) {
+    #bg-home{
+        main{
+            min-height: 84vh;
+        }
+        footer{
+            ul{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
 @media screen and (min-width: 1024px) {
 
     #bg{
@@ -174,71 +187,65 @@
                 }
             }
         }
-}
+    }
 
-#bg-profiles{
-    header{
-        .logo img{
-            width: 150px;
-        }
-    }
-    main {
-        h1 {
-            font-size: 3.3rem;
-            letter-spacing: 0.2rem;
-        }
-        .members {
-            column-gap: 2rem;
-            .btn{
-                height: 10rem;
-                width: 10rem;
-                &:hover {
-                    box-shadow: inset 0 0 0 5px $accent-color;
-                }  
-                span {
-                    bottom: -3.5rem;
-                    font-size: 2rem;
-                }  
-            }
-            .addIcon {
-                height: 10rem;
-                width: 10rem;
-                span {
-                    bottom: -3.5rem;
-                    font-size: 2rem;
-                } 
-                i{
-                    font-size: 6rem;
-                    color: $accent-color;
-                } 
+    #bg-profiles{
+        header{
+            .logo img{
+                width: 150px;
             }
         }
-        .manageProfile {
-            letter-spacing: 0.5rem;
-            font-size: 1.5rem;
-            margin-top: 6rem;
-            width: 40rem;
+        main {
+            h1 {
+                font-size: 3.3rem;
+                letter-spacing: 0.2rem;
+            }
+            .members {
+                column-gap: 2rem;
+                .btn{
+                    height: 10rem;
+                    width: 10rem;
+                    &:hover {
+                        box-shadow: inset 0 0 0 5px $accent-color;
+                    }  
+                    span {
+                        bottom: -3.5rem;
+                        font-size: 2rem;
+                    }  
+                }
+                .addIcon {
+                    height: 10rem;
+                    width: 10rem;
+                    span {
+                        bottom: -3.5rem;
+                        font-size: 2rem;
+                    } 
+                    i{
+                        font-size: 6rem;
+                        color: $accent-color;
+                    } 
+                }
+            }
+            .manageProfile {
+                letter-spacing: 0.5rem;
+                font-size: 1.5rem;
+                margin-top: 6rem;
+                width: 40rem;
+            }
         }
     }
-}
 
-#bg-home{
-    footer{
-        height: 6vh;
-        ul{
-            .footer-link{
-                display: block;
-            }
-            display: flex;
-            justify-content: space-evenly;
-            
-            width: 100%;
-            li{
-                font-size: 12px;
-                line-height: 12px;
-                padding: 0;
+    #bg-home{
+        main{
+            min-height: 84vh;
+        }
+        footer{
+            height: 8vh;
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
             }
         }
     }
-}
 }

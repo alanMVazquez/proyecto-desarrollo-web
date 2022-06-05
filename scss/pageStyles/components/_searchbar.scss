@@ -13,9 +13,12 @@
         margin-right: 15px;
         right: 0px;
         position: absolute;
-        color:$accent-color;
+        color:$text-color;
         background-color:transparent;
-        pointer-events: painted;  
+        pointer-events: painted;
+        &:hover{
+            color: $accent-color;
+        }
     }
     .input-search{
         height: 24px;
@@ -25,8 +28,8 @@
         letter-spacing: 2px;
         outline: none;
         border-radius: 25px;
-        background-color:$bg-color;
-        padding-right: 40px;
+        background-color:$bar-color;
+        padding-right: 26px;
         margin-right: 15px;
         color:$footer-text-color;
         &::placeholder{

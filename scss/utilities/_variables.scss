@@ -1,9 +1,18 @@
 //Color Variants
 
-$bg-color:rgba(20, 0, 26, 0.98);
+$bg-color:rgba(20, 0, 26, 1);
 $bar-color: rgba(13, 0, 17, 0.6);
 $shadow-color: rgba(13, 0, 17, 0.2);
 $accent-color:rgb(221, 255, 0);
 $text-color:#FFFFFF;
 $border-color: #E6E4EA;
 $footer-text-color: #CAC4D0;
+
+$duration:450ms;
+$tileWidth:250px;
+$tileHeight:($tileWidth / (16/9));
+$iconSize:50px;
+$growFactor:1.5; // 1.5 times the original size
+
+$moveLeft: -($tileWidth * ($growFactor - 1) / 2);
+$moveRight: $tileWidth * ($growFactor - 1);
