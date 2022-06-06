@@ -1004,7 +1004,7 @@ html body a {
   transition: all 600ms cubic-bezier(0, 0.11, 0.35, 2);
 }
 
-#bg-home main .video-container {
+#bg-home .video-container {
   position: absolute;
   z-index: -10;
   top: 0;
@@ -1012,9 +1012,22 @@ html body a {
   height: 100vh;
 }
 
+#bg-home main {
+  height: 78vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #bg-home main .info-container {
   position: relative;
-  margin: 0px 48px 0 48px;
+  margin: 0px 16px 0 16px;
 }
 
 #bg-home main .info-container .info-layer {
@@ -1028,14 +1041,12 @@ html body a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 2;
-  right: 0;
   width: 100%;
   gap: 8px;
-  margin-top: 16px;
   background-color: rgba(13, 0, 17, 0.6);
   border-radius: 8px;
   padding: 12px;
@@ -1046,33 +1057,34 @@ html body a {
   text-transform: uppercase;
   letter-spacing: 1px;
   line-height: 1.2;
+  font-size: 3.5vw;
   text-align: center;
 }
 
 #bg-home main .info-container .info-layer .title img {
-  width: 70vw;
+  width: 40vw;
 }
 
 #bg-home main .info-container .info-layer .info {
   color: #FFFFFF;
-  line-height: 1.3;
-  font-size: 4vw;
+  line-height: 1.2;
+  font-size: 3.2vw;
   text-align: center;
 }
 
 #bg-home main .info-container .info-layer .buttons {
-  margin-top: 1.5vw;
-  white-space: nowrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  white-space: nowrap;
+  margin-top: 12px;
 }
 
 #bg-home main .info-container .info-layer .buttons .boton-watch {
   text-decoration: none;
   font-weight: 800;
-  font-size: 14px;
-  color: #000000;
+  font-size: 12px;
+  color: #14001a;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1080,7 +1092,7 @@ html body a {
   letter-spacing: 1.25px;
   padding: 10px 24px;
   background: rgba(221, 255, 0, 0.8);
-  border-radius: 100px;
+  border-radius: 8px;
   -webkit-box-shadow: 0px 4px 8px 3px rgba(13, 0, 17, 0.2);
           box-shadow: 0px 4px 8px 3px rgba(13, 0, 17, 0.2);
   -webkit-filter: drop-shadow(0px 1px 3px rgba(13, 0, 17, 0.2));
@@ -1100,15 +1112,6 @@ html body a {
   position: absolute;
   bottom: 0;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   z-index: 10;
   background-color: rgba(13, 0, 17, 0.6);
   -webkit-box-shadow: 0px 0px 0px 2px rgba(13, 0, 17, 0.2);
@@ -1155,7 +1158,7 @@ html body a {
   width: calc(100% - 78px);
 }
 
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .sidebar.close .nav-links li .sub-menu {
     display: none;
   }
@@ -1181,36 +1184,6 @@ html body a {
   }
   #bg-home .home-nav .bx-menu {
     font-size: 32px;
-  }
-  #bg-home main .info-container .info-layer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    z-index: 2;
-    width: 100%;
-  }
-  #bg-home main .info-container .info-layer h1 {
-    color: #FFFFFF;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    line-height: 1.2;
-    font-size: 4vw;
-    text-align: center;
-  }
-  #bg-home main .info-container .info-layer .title img {
-    width: 50vw;
-  }
-  #bg-home main .info-container .info-layer .info {
-    color: #FFFFFF;
-    line-height: 1.3;
-    font-size: 3vw;
-    text-align: center;
   }
   .sidebar.close ~ #bg-home {
     width: 100%;
@@ -1397,6 +1370,26 @@ html body a {
     font-size: 0.8rem;
     width: 20rem;
   }
+  #bg-home main .info-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #bg-home main .info-container .info-layer {
+    width: 80%;
+  }
+  #bg-home main .info-container .info-layer .title img {
+    width: 40vw;
+  }
+  #bg-home main .info-container .info-layer .info {
+    font-size: 2.2vw;
+  }
+  #bg-home main .info-container .info-layer .buttons .boton-watch {
+    font-size: 14px;
+  }
   #bg-home footer ul {
     display: -ms-grid;
     display: grid;
@@ -1404,6 +1397,9 @@ html body a {
         grid-template-columns: repeat(2, 1fr);
     gap: 0px;
     padding: 8px;
+  }
+  #bg-home footer ul .footer-link {
+    display: block;
   }
 }
 
@@ -1567,69 +1563,48 @@ html body a {
             justify-content: flex-end;
   }
   #bg-home main .info-container .info-layer {
-    width: 60%;
-    gap: 12px;
+    width: 50%;
   }
   #bg-home main .info-container .info-layer h1 {
-    text-align: right;
-    font-size: 3vw;
+    font-size: 2vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100%;
+  }
+  #bg-home main .info-container .info-layer .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100%;
   }
   #bg-home main .info-container .info-layer .title img {
-    width: 35vw;
+    width: 30vw;
   }
   #bg-home main .info-container .info-layer .info {
-    color: #FFFFFF;
-    line-height: 1.2;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     text-align: right;
   }
   #bg-home main .info-container .info-layer .buttons {
-    margin-top: 1.5vw;
-    white-space: nowrap;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100%;
   }
   #bg-home main .info-container .info-layer .buttons .boton-watch {
-    text-decoration: none;
-    font-weight: 800;
-    font-size: 14px;
-    color: #000000;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    letter-spacing: 1.25px;
-    padding: 10px 24px;
-    background: rgba(221, 255, 0, 0.8);
-    border-radius: 100px;
-    -webkit-box-shadow: 0px 4px 8px 3px rgba(13, 0, 17, 0.2);
-            box-shadow: 0px 4px 8px 3px rgba(13, 0, 17, 0.2);
-    -webkit-filter: drop-shadow(0px 1px 3px rgba(13, 0, 17, 0.2));
-            filter: drop-shadow(0px 1px 3px rgba(13, 0, 17, 0.2));
-    -webkit-transition-duration: 0.4s;
-            transition-duration: 0.4s;
-    cursor: pointer;
+    font-size: 18px;
   }
-  #bg-home main .info-container .info-layer .buttons .boton-watch:hover {
-    background: #ddff00;
-    -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 30px 0 rgba(0, 0, 0, 0.19);
-            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 30px 0 rgba(0, 0, 0, 0.19);
-  }
-  #bg-home main .info-container footer {
+  #bg-home footer {
     height: 6vh;
-  }
-  #bg-home main .info-container footer ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
   }
   #bg-home footer ul {
     display: -webkit-box;
