@@ -37,10 +37,6 @@
                 }
             }
         }
-    
-        footer{
-            height: 12vh;
-        }
 }
 
 #bg-profiles{
@@ -63,14 +59,31 @@
         }
     }
 }
+
+#bg-home{
+    footer{
+        ul{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0px;
+            padding: 8px;
+        }
+    }
+}
 }
 
 @media screen and (min-width: 768px) {
-    #bg-home{
+    
+    #bg{
         footer{
             ul{
+                .footer-link{
+                    display: block;
+                }
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
+                gap: 0px;
+                padding: 8px;
             }
         }
     }
@@ -171,12 +184,9 @@
         footer{
             height: 6vh;
             ul{
-                .footer-link{
-                    display: block;
-                }
                 display: flex;
+                flex-direction: row;
                 justify-content: space-evenly;
-                width: 100%;
                 li{
                     font-size: 12px;
                     line-height: 12px;

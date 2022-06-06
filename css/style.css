@@ -359,6 +359,16 @@ html body a {
 }
 
 #bg footer {
+  position: absolute;
+  width: 100%;
+  height: 14vh;
+  bottom: 0px;
+  background: rgba(13, 0, 17, 0.6);
+}
+
+#bg footer ul {
+  height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -372,11 +382,7 @@ html body a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
-  width: 100%;
-  height: 14vh;
-  bottom: 0px;
-  background: rgba(13, 0, 17, 0.6);
+  gap: 8px;
 }
 
 #bg footer ul .footer-link {
@@ -386,11 +392,11 @@ html body a {
 #bg footer ul li {
   list-style-type: none;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 12px;
   text-align: center;
   letter-spacing: 1px;
-  padding: 6px;
+  padding: 4px;
   color: rgba(221, 255, 0, 0.5);
 }
 
@@ -871,76 +877,6 @@ html body a {
   font-size: 12px;
 }
 
-@media (max-width: 576px) {
-  .sidebar.close .nav-links li .sub-menu {
-    display: none;
-  }
-  .sidebar {
-    width: 78px;
-  }
-  .sidebar .profile-details {
-    width: 78px;
-  }
-  .sidebar.close {
-    width: 0;
-  }
-  .sidebar.close .profile-details {
-    width: 0px;
-  }
-  .sidebar.close .profile-details img {
-    display: none;
-  }
-  #bg-home {
-    left: 78px;
-    width: calc(100% - 78px);
-    z-index: 100;
-  }
-  #bg-home .home-nav .bx-menu {
-    font-size: 32px;
-  }
-  #bg-home main .info-container {
-    margin: 0px 16px 0 16px;
-  }
-  #bg-home main .info-container .info-layer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 16px;
-    z-index: 2;
-    right: 0;
-    top: 16px;
-    width: 100%;
-    gap: 10px;
-  }
-  #bg-home main .info-container .info-layer h1 {
-    color: #FFFFFF;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    line-height: 1.2;
-    font-size: 5vw;
-    text-align: center;
-  }
-  #bg-home main .info-container .info-layer .title img {
-    width: 70vw;
-  }
-  #bg-home main .info-container .info-layer .info {
-    color: #FFFFFF;
-    line-height: 1.3;
-    font-size: 4vw;
-    text-align: center;
-  }
-  .sidebar.close ~ #bg-home {
-    width: 100%;
-    left: 0;
-  }
-}
-
 #bg-home {
   position: relative;
   background-color: #14001a;
@@ -1078,8 +1014,7 @@ html body a {
 
 #bg-home main .info-container {
   position: relative;
-  padding-bottom: 50px;
-  margin: 0px 16px 0 16px;
+  margin: 0px 48px 0 48px;
 }
 
 #bg-home main .info-container .info-layer {
@@ -1101,6 +1036,9 @@ html body a {
   width: 100%;
   gap: 8px;
   margin-top: 16px;
+  background-color: rgba(13, 0, 17, 0.6);
+  border-radius: 8px;
+  padding: 12px;
 }
 
 #bg-home main .info-container .info-layer h1 {
@@ -1108,7 +1046,6 @@ html body a {
   text-transform: uppercase;
   letter-spacing: 1px;
   line-height: 1.2;
-  font-size: 3vw;
   text-align: center;
 }
 
@@ -1216,6 +1153,69 @@ html body a {
 .sidebar.close ~ #bg-home {
   left: 78px;
   width: calc(100% - 78px);
+}
+
+@media (max-width: 575px) {
+  .sidebar.close .nav-links li .sub-menu {
+    display: none;
+  }
+  .sidebar {
+    width: 78px;
+  }
+  .sidebar .profile-details {
+    width: 78px;
+  }
+  .sidebar.close {
+    width: 0;
+  }
+  .sidebar.close .profile-details {
+    width: 0px;
+  }
+  .sidebar.close .profile-details img {
+    display: none;
+  }
+  #bg-home {
+    left: 78px;
+    width: calc(100% - 78px);
+    z-index: 100;
+  }
+  #bg-home .home-nav .bx-menu {
+    font-size: 32px;
+  }
+  #bg-home main .info-container .info-layer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 2;
+    width: 100%;
+  }
+  #bg-home main .info-container .info-layer h1 {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    font-size: 4vw;
+    text-align: center;
+  }
+  #bg-home main .info-container .info-layer .title img {
+    width: 50vw;
+  }
+  #bg-home main .info-container .info-layer .info {
+    color: #FFFFFF;
+    line-height: 1.3;
+    font-size: 3vw;
+    text-align: center;
+  }
+  .sidebar.close ~ #bg-home {
+    width: 100%;
+    left: 0;
+  }
 }
 
 .main-series-peliculas {
@@ -1379,9 +1379,6 @@ html body a {
   #bg main .formulario .tab {
     margin-top: 10px;
   }
-  #bg footer {
-    height: 12vh;
-  }
   #bg-profiles main {
     row-gap: 2rem;
   }
@@ -1400,14 +1397,27 @@ html body a {
     font-size: 0.8rem;
     width: 20rem;
   }
-}
-
-@media screen and (min-width: 768px) {
   #bg-home footer ul {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    padding: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #bg footer ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    padding: 8px;
+  }
+  #bg footer ul .footer-link {
+    display: block;
   }
 }
 
@@ -1494,13 +1504,13 @@ html body a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    width: 100%;
-  }
-  #bg footer ul .footer-link {
-    display: block;
   }
   #bg footer ul li {
     font-size: 12px;
