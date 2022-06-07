@@ -1,8 +1,5 @@
 @import "components/sidebar";
 
-*{
-    font-family: 'Yeon Sung', cursive;
-}
 section{
     padding: 16px 16px;
 }
@@ -76,18 +73,22 @@ section{
                 font-weight: 900;
                 text-transform: uppercase;
                 letter-spacing: 5px;
+                font-family: 'Yeon Sung', cursive;
                 span{
                     font-size: 1.4em;
                     font-weight: 600;
+                    font-family: 'Yeon Sung', cursive;
                 }
             }
             p{
                 font-size: 1em;
                 margin-bottom: 40px;
+                font-family: 'Yeon Sung', cursive;
             }
             a{
                 background: rgba(221, 255, 0, 0.8);
                 padding: 15px 35px;
+                font-family: 'Yeon Sung', cursive;
                 color: $bg-color;
                 font-size: 1.2em;
                 font-weight: 600;

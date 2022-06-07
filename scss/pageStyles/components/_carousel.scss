@@ -1,11 +1,10 @@
 .Carousel{
     width: 100%;
-    margin: 0px 60px;
+    margin-top: 8vh;
 }
 .Carousel h2{
-    font-size: 26px;
-    line-height: 38px;
-    padding-bottom: 24px;
+    font-size: 16px;
+    padding-bottom: 32px;
     opacity: .9;
     text-transform: uppercase;
     letter-spacing: 10px;
@@ -19,11 +18,12 @@
     display: flex;
     align-items: center;
     width: fit-content;
-    height: 304px;
+    height: 300px;
     padding: 10px 0px;
     margin: 0px auto;
     max-width: 90vw;
     overflow: hidden;
+    
 }
 .slick-track{
     position: relative;
@@ -32,6 +32,7 @@
     display: flex;
     justify-content: center;
     transition: .5s ease-in-out;
+    
 }
 .slick{
     position: relative;
@@ -41,6 +42,7 @@
     box-sizing: border-box;
     display: flex;
     height: 100%;
+    
 }
 .slick h4{
     position: absolute;
@@ -61,6 +63,7 @@
     border-radius: 4px;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
     transition: .3s ease-in-out;
+    border-radius: 8px;
 }
 .slick a img:hover{
     opacity: .85;

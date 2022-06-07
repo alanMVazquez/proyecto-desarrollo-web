@@ -877,10 +877,6 @@ html body a {
   font-size: 12px;
 }
 
-* {
-  font-family: 'Yeon Sung', cursive;
-}
-
 section {
   padding: 16px 16px;
 }
@@ -1077,21 +1073,25 @@ section {
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 5px;
+  font-family: 'Yeon Sung', cursive;
 }
 
 #home .home .content h1 span {
   font-size: 1.4em;
   font-weight: 600;
+  font-family: 'Yeon Sung', cursive;
 }
 
 #home .home .content p {
   font-size: 1em;
   margin-bottom: 40px;
+  font-family: 'Yeon Sung', cursive;
 }
 
 #home .home .content a {
   background: rgba(221, 255, 0, 0.8);
   padding: 15px 35px;
+  font-family: 'Yeon Sung', cursive;
   color: #14001a;
   font-size: 1.2em;
   font-weight: 600;
@@ -1241,13 +1241,12 @@ section {
 
 #home .main-series-peliculas .Carousel {
   width: 100%;
-  margin: 0px 60px;
+  margin-top: 8vh;
 }
 
 #home .main-series-peliculas .Carousel h2 {
-  font-size: 26px;
-  line-height: 38px;
-  padding-bottom: 24px;
+  font-size: 16px;
+  padding-bottom: 32px;
   opacity: .9;
   text-transform: uppercase;
   letter-spacing: 10px;
@@ -1265,7 +1264,7 @@ section {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  height: 304px;
+  height: 300px;
   padding: 10px 0px;
   margin: 0px auto;
   max-width: 90vw;
@@ -1323,6 +1322,7 @@ section {
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
+  border-radius: 8px;
 }
 
 #home .main-series-peliculas .slick a img:hover {
