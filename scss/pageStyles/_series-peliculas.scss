@@ -1,4 +1,8 @@
-.main-series-peliculas{
-    @import "components/carousel";
-    
+#home{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    .main-series-peliculas{
+        @import "../pageStyles/components/carousel";
+    }
 }
+
