@@ -8,15 +8,19 @@
         <link rel="stylesheet" href="../css/style.css">
         <!-- Icon library -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-        <!-- Link typography -->
-        <!-- Montserrat Alternates and Poppins (Regular) -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Poppins&display=swap" rel="stylesheet">
         <!-- Page title -->
         <title>Magima - Peliculas</title>
+        <!-- Description -->
+        <meta name="description" content="Busca tu pelicula favorita en nuestro amplio catálogo de anime.">
+        <!-- Keywords -->
+        <meta name="keywords" content="anime, peliculas, tv, cine, animación, búsqueda, magima">
+        <!-- Copyright -->
+        <meta name="copyright" content="MAGIMA">
+        <!-- Author -->
+        <meta name="author" content="Alan Maximiliano Vazquez, vazquezalanmaximiliano@gmail.com">
     </head>
     <body>
+<!---------------------- Sidebar Menú ------------------------>
         <div class="sidebar close">
           <div class="logo-details">
             <i><img src="../img/LogoIcon.png" alt=""></i>
@@ -146,7 +150,9 @@
         </li>
           </ul>
         </div>
+<!---------------------- Contenido Principal ------------------------>
         <div id="home">
+
         <header>
             <div class="nav">
                 <i class='bx bx-menu' ></i>
@@ -158,8 +164,10 @@
         </header>
     
         <main class="main-series-peliculas">
+<!---------------------- Cuerpo Principal con Carousel de imagenes ------------------------>
             <div class="Carousel">
                 <h2>Últimos Capítulos Agregados</h2>
+<!---------------------- Carousel 1 ------------------------>
                 <div class="slick-list" id="slick-list">
                     <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
@@ -320,6 +328,7 @@
                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
                     </button>
                 </div>
+<!---------------------- Carousel 2 ------------------------>
                 <div class="slick-list" id="slick-list">
                     <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
@@ -481,24 +490,22 @@
                     </button>
                 </div>
             </div>
-            
-        
-          </main>
+
+        </main>
     
-          <footer>
+        <footer>
             <ul>
                 <li><a href="#">Preguntas Frecuentes</a></li>
                 <li><a href="#">Términos y Condiciones</a></li>
                 <li><a href="#">Privacidad</a></li>
                 <li>Creado por Alan M. Vazquez</li>
             </ul>
-          </footer>
+        </footer>
+
         </div>
-        
-        
-    
+
     <script defer src="../js/script-sidebar.js"></script>
     <script defer src="../js/script-carousel.js"></script>
     
-    </body>
+</body>
 </html>

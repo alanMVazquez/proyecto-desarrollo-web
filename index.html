@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link CSS -->
     <link rel="stylesheet" href="./css/style.css">
-    <!-- Link typography -->
-    <!-- Montserrat Alternates and Poppins (Regular) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Poppins&display=swap" rel="stylesheet">
     <!-- Page title -->
     <title>Magima</title>
+    <!-- Description -->
+    <meta name="description" content="En Magima encontrarás un amplio catálogo de anime para disfrutar donde quieras que estés.">
+    <!-- Keywords -->
+    <meta name="keywords" content="anime, series, peliculas, tv, cine, animación">
+    <!-- Copyright -->
+    <meta name="copyright" content="MAGIMA">
+    <!-- Author -->
+    <meta name="author" content="Alan Maximiliano Vazquez, vazquezalanmaximiliano@gmail.com">
 </head>
 
 <body>
-
+<!-------- Body dentro de un div para el video de fondo -------->
     <div id="bg">
 
         <video autoplay loop plays-inline muted id="bg-video" poster="./img/index/background1.jpg">
@@ -28,17 +31,19 @@
         </header>
         
         <main>
+<!---------------------- Texto ------------------------>
             <div class="texto-inicio">
                 <h1>Anime sin límites</h1>
                 <h2>Donde quieras y cuando quieras</h2>
                 <h3>¿Quieres ser parte de Magima?</h3>
             </div>
-
+<!---------------------- Formulario General ------------------------>
             <div class="formulario">
                 <div class="tab">
                     <button class="tablinks" onclick="openCity(event, 'Iniciar')" id="defaultOpen">Iniciar Sesión</button>
                     <button class="tablinks" onclick="openCity(event, 'Registro')">Registro</button>
                 </div>
+<!---------------------- Form Iniciar Sesión ------------------------>
                 <div id="Iniciar" class="tabcontent">
                     <form class="form-ingresar">
                         <fieldset>
@@ -58,6 +63,7 @@
                         </div>
                     </form>
                 </div>
+<!---------------------- Form Registro ------------------------>
                 <div id="Registro" class="tabcontent">
                     <form class="form-ingresar">
                         <fieldset>
@@ -81,10 +87,9 @@
                     </form>    
                 </div>
             </div>
-
+<!---------------------- Imagenes laterales de chica ------------------------>
             <img src="./img/index/girlpink.png" alt="" class="img-ingresar">
             <img src="./img/index/girlpink.png" alt="" class="img-ingresar2">
-
         </main>
         
         <footer>

@@ -12,9 +12,7 @@ section{
     width: calc(100% - 260px);
     transition: all 0.5s ease;
     z-index: 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    @include flex(column,center,center);
     overflow: hidden;
     header{
         z-index: 999;
@@ -83,26 +81,9 @@ section{
             p{
                 font-size: 1em;
                 margin-bottom: 40px;
-                font-family: 'Yeon Sung', cursive;
             }
             a{
-                background: rgba(221, 255, 0, 0.8);
-                padding: 15px 35px;
-                font-family: 'Yeon Sung', cursive;
-                color: $bg-color;
-                font-size: 1.2em;
-                font-weight: 600;
-                text-decoration: none;
-                border-radius: 8px;
-                box-shadow: 0px 4px 8px 3px $shadow-color;
-                filter: drop-shadow(0px 1px 3px $shadow-color);
-                transition-duration: 0.4s;
-                cursor: pointer;
-                white-space: nowrap;
-                &:hover{
-                    background: rgb(221, 255, 0);
-                    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 30px 0 rgba(0,0,0,0.19);
-                }
+                @extend %boton;
             }
         }
         }

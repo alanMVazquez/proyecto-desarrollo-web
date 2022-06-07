@@ -26,6 +26,33 @@
   }
 }
 
+#bg main .formulario .form-ingresar .boton-registro, #home .home .content a {
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 16px;
+  color: #14001a;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 1.5px;
+  padding: 10px 24px;
+  background: rgba(221, 255, 0, 0.8);
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 4px 8px 3px rgba(13, 0, 17, 0.2);
+          box-shadow: 0px 4px 8px 3px rgba(13, 0, 17, 0.2);
+  -webkit-filter: drop-shadow(0px 1px 3px rgba(13, 0, 17, 0.2));
+          filter: drop-shadow(0px 1px 3px rgba(13, 0, 17, 0.2));
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+#bg main .formulario .form-ingresar .boton-registro:hover, #home .home .content a:hover {
+  background: #ddff00;
+  -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 30px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 30px 0 rgba(0, 0, 0, 0.19);
+}
+
 html body {
   height: 100vh;
 }
@@ -52,6 +79,10 @@ html body a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -85,6 +116,9 @@ html body a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
   gap: 14px;
 }
 
@@ -108,12 +142,6 @@ html body a {
   font-weight: 600;
   font-size: 30px;
   letter-spacing: 0.5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
   color: #FFFFFF;
 }
@@ -122,12 +150,6 @@ html body a {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
   color: #FFFFFF;
   margin-top: 10px;
@@ -136,12 +158,6 @@ html body a {
 #bg main .texto-inicio h3 {
   font-weight: 600;
   font-size: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
   color: #FFFFFF;
   margin-top: 14px;
@@ -155,6 +171,9 @@ html body a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -169,9 +188,16 @@ html body a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
   background: rgba(114, 101, 136, 0.2);
 }
 
@@ -225,6 +251,9 @@ html body a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -273,6 +302,10 @@ html body a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -289,6 +322,13 @@ html body a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -305,6 +345,13 @@ html body a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -320,38 +367,17 @@ html body a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
   margin-top: 10px;
-}
-
-#bg main .formulario .form-ingresar .boton-registro {
-  text-decoration: none;
-  font-weight: 800;
-  font-size: 14px;
-  line-height: 14px;
-  color: #000000;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  letter-spacing: 1.25px;
-  padding: 10px 24px;
-  background: rgba(221, 255, 0, 0.8);
-  border-radius: 100px;
-  -webkit-box-shadow: 0px 4px 8px 3px rgba(13, 0, 17, 0.2);
-          box-shadow: 0px 4px 8px 3px rgba(13, 0, 17, 0.2);
-  -webkit-filter: drop-shadow(0px 1px 3px rgba(13, 0, 17, 0.2));
-          filter: drop-shadow(0px 1px 3px rgba(13, 0, 17, 0.2));
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
-}
-
-#bg main .formulario .form-ingresar .boton-registro:hover {
-  background: #ddff00;
-  -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 30px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 30px 0 rgba(0, 0, 0, 0.19);
 }
 
 #bg main .img-ingresar, #bg main .img-ingresar2 {
@@ -893,13 +919,16 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   overflow: hidden;
 }
 
@@ -1085,32 +1114,6 @@ section {
 #home .home .content p {
   font-size: 1em;
   margin-bottom: 40px;
-  font-family: 'Yeon Sung', cursive;
-}
-
-#home .home .content a {
-  background: rgba(221, 255, 0, 0.8);
-  padding: 15px 35px;
-  font-family: 'Yeon Sung', cursive;
-  color: #14001a;
-  font-size: 1.2em;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 8px;
-  -webkit-box-shadow: 0px 4px 8px 3px rgba(13, 0, 17, 0.2);
-          box-shadow: 0px 4px 8px 3px rgba(13, 0, 17, 0.2);
-  -webkit-filter: drop-shadow(0px 1px 3px rgba(13, 0, 17, 0.2));
-          filter: drop-shadow(0px 1px 3px rgba(13, 0, 17, 0.2));
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
-  cursor: pointer;
-  white-space: nowrap;
-}
-
-#home .home .content a:hover {
-  background: #ddff00;
-  -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 30px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 30px 0 rgba(0, 0, 0, 0.19);
 }
 
 #home video {
