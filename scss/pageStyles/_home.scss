@@ -66,21 +66,13 @@ section{
             &.active{
                 display: block;
             }
-            h1{
-                font-size: 4.2em;
-                font-weight: 900;
-                text-transform: uppercase;
-                letter-spacing: 5px;
-                font-family: 'Yeon Sung', cursive;
-                span{
-                    font-size: 1.4em;
-                    font-weight: 600;
-                    font-family: 'Yeon Sung', cursive;
-                }
+            img{
+                width: 50vw;
+                margin-bottom: 20px;
             }
             p{
                 font-size: 1em;
-                margin-bottom: 40px;
+                margin-bottom: 30px;
             }
             a{
                 @extend %boton;
