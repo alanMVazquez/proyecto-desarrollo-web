@@ -1,14 +1,15 @@
 .Carousel{
     width: 100%;
-    margin-top: 8vh;
+    margin-top: 50px;
 }
 .Carousel h2{
-    font-size: 16px;
-    padding-bottom: 32px;
-    opacity: .9;
+    font-size: 18px;
+    padding-bottom: 24px;
+    opacity: .8;
+    color: white;
     text-transform: uppercase;
-    letter-spacing: 10px;
-    text-align: center;
+    letter-spacing: 8px;
+    text-align: left;
 }
 
 /* images */
@@ -47,7 +48,7 @@
 .slick h4{
     position: absolute;
     z-index: 1;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 23px;
     color: #fff;
     padding: 15px;
