@@ -1333,6 +1333,11 @@ section {
   line-height: 23px;
   color: white;
   padding: 12px;
+  text-transform: uppercase;
+  width: 194px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), color-stop(110%, black));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, black 110%);
+  border-radius: 8px 8px 0 0;
 }
 
 #home .main-series-peliculas .carousel .slick-list .slick-track .slick a h4 small {
